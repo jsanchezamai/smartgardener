@@ -7,6 +7,7 @@ Developing time has been divided in 4 big [milestones](https://github.com/jsanch
 - Application context, [Playground](https://github.com/jsanchezamai/smartgardener/wiki/Playground).
 - Wall definition, [Holon](https://github.com/jsanchezamai/smartgardener/wiki/Holon).
 - Lifetime experience, [Informon](https://github.com/jsanchezamai/smartgardener/wiki/Informon).
+- Release.
 
 Road map 
 ============
@@ -32,8 +33,8 @@ This milestone should release:
 At previous sesion on SmartGardener v 0.1, user shoud be able to:
 
 - Locate inside playground desk the **"Launch holon" button**. Launch it. Defined wall should be presented.
-- Agents start wall run time. 
-- Brain is started from [**per plant type models**](https://github.com/fablabbcn/smartcitizen-iscape-models) are loaded into plot holders.
+- Brains are started from [**per plant type models**](https://github.com/fablabbcn/smartcitizen-iscape-models), those are instanciated at plot holders.
+- Agents starting at wall runtime. 
 
 This milestone should release:
 
@@ -47,7 +48,7 @@ This milestone should release:
 User should be able to:
 
 - Locate in holon desk the **"Launch informon" button**. Launch it. Existing environment and wall are presented into ia and augmented reality scenario.
-- Environment conditions are linked with real wall readings and theoretical models. Brains coordinate agents actions.
+- **Environment conditions** are linked with **real wall readings** and **theoretical models**. Brains coordinate agents actions.
 
 This milestone should release:
 - Monitor the onboarding cycle. Calibration process. Release [SmartGardener Kit HyperPlatform](https://github.com/fablabbcn/smartcitizen-web).
