@@ -1,0 +1,109 @@
+- name: Platform
+  color: color-platform
+  tagline: 'Visualize the data and manage your devices'
+  url: 'https://kits.smartcitizen.me'
+  icon: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+    <g>
+      <path class="svg-platform" d="M60.2,3.7H9.8C5.5,3.7,2,7.2,2,11.5v47c0,4.3,3.5,7.8,7.8,7.8h50.5c4.3,0,7.8-3.5,7.8-7.8v-47
+        C68,7.2,64.5,3.7,60.2,3.7z M9.8,7.1h50.5c2.4,0,4.4,2,4.4,4.4v8.3H5.3v-8.3C5.3,9.1,7.3,7.1,9.8,7.1z M46.1,40.3
+        c0,8.3-9.7,16.1-11.1,17.2c-1.4-1.1-11.1-8.9-11.1-17.2c0-6.1,4.9-11.1,11-11.2v0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0v0
+        C41.2,29.2,46.1,34.2,46.1,40.3z"/>
+      <rect x="10.4" y="12.3" class="svg-platform" width="4.9" height="3.3"/>
+      <rect x="18.3" y="12.3" class="svg-platform" width="4.9" height="3.3"/>
+      <rect x="26.1" y="12.3" class="svg-platform" width="4.9" height="3.3"/>
+      <circle class="svg-platform" cx="35.1" cy="39.8" r="5.8"/>
+    </g>
+    </svg>
+
+- name: Developer documentation
+  color: color-developer
+  tagline: 'Get the most out of your Smart Citizen Kit.'
+  url: 'https://developer.smartcitizen.me'
+  icon: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+    <g>
+      <path class="svg-developer" d="M48.2,107c0.9,0.9,2.1,0.9,3,0l5.3-5.5c0.9-0.9,0.9-2.2,0-3L43.2,85.3L56.5,72c0.9-0.9,0.9-2.2,0-3l-5.3-5.5
+        c-0.9-0.9-2.1-0.9-3,0L28,83.9c-0.9,0.9-0.9,2.2,0,3L48.2,107z"/>
+      <path class="svg-developer" d="M93.5,101.7l5.3,5.5c0.9,0.9,2.2,0.9,3,0l20.4-20.4c0.9-0.9,0.9-2.2,0-3l-20.2-20.2c-0.9-0.9-2.1-0.9-3,0
+        l-5.5,5.5c-0.9,0.9-0.9,2.2,0,3l13.3,13.3L93.5,98.6C92.8,99.5,92.8,100.8,93.5,101.7z"/>
+      <path class="svg-developer" d="M64.2,110h6.5c0.9,0,1.6-0.6,1.9-1.5l15.5-44.8c0.4-1.3-0.6-2.8-1.9-2.8h-6.6c-0.9,0-1.6,0.6-1.9,1.5
+        l-15.5,44.8C61.6,108.5,62.7,110,64.2,110z"/>
+    </g>
+    </svg>
+
+- name: Forum
+  color: color-forum
+  tagline: 'Talk with other users and ask questions'
+  url: 'https://forum.smartcitizen.me'
+  icon: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+    <g>
+      <path class="svg-forum" d="M107.3,76.3H43.1c-3.3,0-6.1,2.7-6.1,6.1c0,3.3,2.7,6.1,6.1,6.1c0,0,0,0,0,0h64.2c3.3,0,6.1-2.7,6.1-6.1
+        S110.7,76.3,107.3,76.3z"/>
+      <path class="svg-forum" d="M117.5,9h-85C17.2,9,4.7,21.5,4.7,36.8v90.8C4.7,133,8,138,12.9,139.9c1.6,0.7,3.4,1.1,5.2,1.1
+        c3.5,0,6.9-1.4,9.3-3.9L45,119.5h72.5c15.3,0,27.7-12.5,27.8-27.8V36.8C145.3,21.5,132.8,9,117.5,9z M133.2,36.8v54.9
+        c0,8.6-7,15.6-15.6,15.6l-75.2,0c-1.8,0.1-3.4,0.9-4.6,2.2l-18.9,18.9c-0.2,0.2-0.5,0.3-0.8,0.3c0,0,0,0,0,0
+        c-0.3,0-0.6-0.1-0.8-0.3c-0.2-0.2-0.3-0.5-0.3-0.8V36.8c0-8.6,7-15.7,15.6-15.7h85C126.1,21.1,133.2,28.2,133.2,36.8z"/>
+      <path class="svg-forum" d="M107.3,44.2H43.1c-3.3,0-6.1,2.7-6.1,6.1c0,1.6,0.6,3.1,1.8,4.3c1.1,1.1,2.7,1.8,4.3,1.8h64.2
+        c3.3,0,6.1-2.7,6.1-6.1C113.4,46.9,110.7,44.2,107.3,44.2z"/>
+    </g>
+    </svg>
+
+- name: API
+  color: 'color-api'
+  tagline: 'Get the raw data in json format'
+  url: 'https://api.smartcitizen.me'
+  icon: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+    <g>
+      <path class="svg-api" d="M134.8,16.1H15.3C9.6,16.1,5,20.9,5,26.5v97.1c0,5.8,4.7,10.3,10.3,10.3h119.3c5.8,0,10.3-4.7,10.3-10.3V26.5
+        C145.1,20.7,140.4,16.1,134.8,16.1z M49.3,26.8c2.5,0,4.4,2.1,4.4,4.4c0,2.5-2.1,4.4-4.4,4.4c-2.5,0-4.4-2.1-4.4-4.4
+        C44.8,28.7,46.7,26.8,49.3,26.8z M35.7,26.8c2.5,0,4.4,2.1,4.4,4.4c0,2.5-2.1,4.4-4.4,4.4c-2.5,0-4.4-2.1-4.4-4.4
+        C31.3,28.7,33.3,26.8,35.7,26.8z M22.1,26.8c2.5,0,4.4,2.1,4.4,4.4c0,2.5-2.1,4.4-4.4,4.4c-2.5,0-4.4-2.1-4.4-4.4
+        C17.7,28.7,19.8,26.8,22.1,26.8z M135.6,123.5c0,0.4-0.3,0.7-0.7,0.7H15.3c-0.4,0-0.7-0.3-0.7-0.7V46.4h121V123.5z"/>
+      <path class="svg-api" d="M48.2,107c0.9,0.9,2.1,0.9,3,0l5.3-5.5c0.9-0.9,0.9-2.2,0-3L43.2,85.3L56.5,72c0.9-0.9,0.9-2.2,0-3l-5.3-5.5
+        c-0.9-0.9-2.1-0.9-3,0L28,83.9c-0.9,0.9-0.9,2.2,0,3L48.2,107z"/>
+      <path class="svg-api" d="M93.5,101.7l5.3,5.5c0.9,0.9,2.2,0.9,3,0l20.4-20.4c0.9-0.9,0.9-2.2,0-3l-20.2-20.2c-0.9-0.9-2.1-0.9-3,0
+        l-5.5,5.5c-0.9,0.9-0.9,2.2,0,3l13.3,13.3L93.5,98.6C92.8,99.5,92.8,100.8,93.5,101.7z"/>
+      <path class="svg-api" d="M64.2,110h6.5c0.9,0,1.6-0.6,1.9-1.5l15.5-44.8c0.4-1.3-0.6-2.8-1.9-2.8h-6.6c-0.9,0-1.6,0.6-1.9,1.5
+        l-15.5,44.8C61.6,108.5,62.7,110,64.2,110z"/>
+    </g>
+    </svg>
+
+- name: Support
+  color: 'color-support'
+  tagline: 'Get professional support'
+  #url: 'https://support.smartcitizen.me'
+  url: 'https://smartcitizen.me'
+  icon: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 181.3 181.3" style="enable-background:new 0 0 181.3 181.3;" xml:space="preserve">
+    <g>
+      <path class="svg-support" d="M11.3,170.8c-8.8-8.8-8.8-23.1,0-32l42.5-42.5l10.4,10.4l58.5-58.3V27l43.2-21.6l10.8,10.8l-21.6,43h-21.6
+        L75,117.6l10.8,10.8l-42.5,42.5C34.3,179.6,20.2,179.6,11.3,170.8"/>
+      <path class="svg-support" d="M148.5,155.2l-48.8-49l-8,8l50.3,50.3c6.1,6.1,16.2,6.1,22.4,0c6.1-6.1,6.1-16.2,0-22.4l-50.3-50.3l-8,8l49,49
+        c1.9,1.9,1.9,4.7,0,6.5C153.4,157,150.4,157,148.5,155.2"/>
+      <path class="svg-support" d="M44.6,76.8c5.8-0.4,11.5,1.7,15.6,6l7.5,7.5l8-8L65.6,72.1c-1.9-1.9-1.9-4.7,0-6.5c1.9-1.9,4.7-1.9,6.5,0
+        l10.1,10.1l8-8l-6.3-6.3c-4.5-4.5-6.7-10.6-6-16.8c1.3-10.6-2.2-21.8-10.4-30C58,5.1,44.4,1.9,32.1,5.2c-1.5,0.4-2,2.2-0.9,3.4
+        l14.3,14.3c4.5,4.5,4.5,11.5,0,16l-6.7,6.7c-4.5,4.5-11.5,4.5-16,0L9.2,32.1C8.1,30.9,6,31.5,5.8,33C3.8,44.9,7,57.4,16.1,66.3
+        C23.7,74.2,34.3,77.7,44.6,76.8"/>
+    </g>
+    </svg>
+
+- name: Pro services
+  color: color-services
+  tagline: 'See our professional services'
+  url: 'https://smartcitizen.me'
+  #url: 'https://pro.smartcitizen.me'
+

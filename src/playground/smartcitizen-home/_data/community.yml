@@ -1,0 +1,9 @@
+- name: iScape Onboarding
+  color: color-developer
+  tagline: iScape project onboarding
+  url: https://onboarding.iscape.smartcitizen.me
+
+- name: Atencio
+  color: color-developer
+  tagline: Atencio onboarding
+  url: https://atencio.smartcitizen.me

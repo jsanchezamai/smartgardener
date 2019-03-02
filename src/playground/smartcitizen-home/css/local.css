@@ -1,0 +1,54 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic|Roboto:400,700,700italic,400italic);
+@import url('https://fonts.googleapis.com/css?family=Kanit:400,500,600,700,900');
+
+
+body{
+  font-family: 'Kanit';
+  background: #e3e3e3;
+}
+
+a, a:hover {
+  color: inherit;
+}
+
+p{
+  font-family: 'Roboto';
+  margin:0;
+}
+
+.sc-title{
+  height: 80px;
+}
+.sc-text{
+  height: 80px;
+}
+h4{
+  font-size:1.8rem;
+  font-weight: 700;
+  letter-spacing:1px;
+  line-height: 2.0rem;
+  margin: 1.0rem 0.1rem;
+  text-transform: uppercase;
+}
+
+.svg-platform{fill:#FF3A4B;}
+.svg-developer{fill:#55C4F5;}
+.svg-forum{fill:#ffc100;}
+.svg-api{fill:#FF8600;}
+.svg-support{fill:#8CC252;}
+.svg-services{fill:#681DBD;}
+
+.color-platform{color:#FF3A4B;}
+.color-developer{color:#55C4F5;}
+.color-forum{color:#ffc100;}
+.color-api{color:#FF8600;}
+.color-support{color:#8CC252;}
+.color-services{color:#681DBD;}
+
+.color-platform:hover{background:#FFE8EA;}
+.color-developer:hover{background:#EBF8FE;}
+.color-forum:hover{background:#fff8e0;}
+.color-api:hover{background:#FFdbb3;}
+.color-support:hover{background:#f1f8ea;}
+.color-services:hover{background:#ede4f7;}
