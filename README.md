@@ -6,10 +6,9 @@ Developing time has been divided in 4 big [milestones](https://github.com/jsanch
 
 - Application context, [Playground](https://github.com/jsanchezamai/smartgardener/wiki/Playground).
 - Wall definition, [Holon](https://github.com/jsanchezamai/smartgardener/wiki/Holon).
-- Lifetime experience [Informon](https://github.com/jsanchezamai/smartgardener/wiki/Informon).
-- SmartGardener Release: [SmartGardener-holon](https://github.com/jsanchezamai/smartgardener/wiki/holon-SmartGardener) and [SmartGardener-informon](https://github.com/jsanchezamai/smartgardener/wiki/informon-SmartGardener).
+- Lifetime experience, [Informon](https://github.com/jsanchezamai/smartgardener/wiki/Informon).
 
-Road map (user point of view)
+Road map 
 ============
 
 [Playground](https://github.com/jsanchezamai/smartgardener/wiki/Playground)
@@ -18,10 +17,9 @@ Road map (user point of view)
 User should be able to:
 
 - Open the SmartGardener v 0.1.
-- Locate **menu / new / Create a playground**. Define a wall by geolocation, define dimensions, pick plant. 
-- Launch it. 
-- An **empty environment** is showed linked to general access **weather forecasting and climatic regions** big data sources.
-- **Circadian and seasonal timers** are triggered on a runtime line.
+- Locate **menu / new / Create a wall**. Define a wall by geolocation, define dimensions, pick plant kind, pick soil. 
+- Launch it. An **empty environment** is created.
+- Agents start to report brain requests. **Weather forecasting and climatic regions** agents connect and sync with big data sources. **Circadian and seasonal timers** agents are triggered on a dual runtime line.
 
 This milestone should release:
 
@@ -31,11 +29,11 @@ This milestone should release:
 [SmartGardener-holon](https://github.com/jsanchezamai/smartgardener/wiki/holon-SmartGardener)
  ------------------------
 
-User shoud be able to:
+At previous sesion on SmartGardener v 0.1, user shoud be able to:
 
-- Locate in playground desk the **"Launch holon" button**. Defined wall should appear inside previous environment.
-- Wall own runtime line over the environment one. 
-- [**Per plant type models**](https://github.com/fablabbcn/smartcitizen-iscape-models) are loaded into plot holders.
+- Locate inside playground desk the **"Launch holon" button**. Launch it. Defined wall should be presented.
+- Agents start wall run time. 
+- Brain is started from [**per plant type models**](https://github.com/fablabbcn/smartcitizen-iscape-models) are loaded into plot holders.
 
 This milestone should release:
 
@@ -48,7 +46,8 @@ This milestone should release:
 
 User should be able to:
 
-- Locate in holon desk the **"Launch informon" button**. Launch it. Existing environment and wall are presented into augmented reality scenario linking together modeled wall lifetime and real time wall.
+- Locate in holon desk the **"Launch informon" button**. Launch it. Existing environment and wall are presented into ia and augmented reality scenario.
+- Environment conditions are linked with real wall readings and theoretical models. Brains coordinate agents actions.
 
 This milestone should release:
 - Monitor the onboarding cycle. Calibration process. Release [SmartGardener Kit HyperPlatform](https://github.com/fablabbcn/smartcitizen-web).
