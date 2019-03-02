@@ -4,13 +4,16 @@ Overview
 ============
 Developing time has been divided in 4 big [milestones](https://github.com/jsanchezamai/smartgardener/milestones):
 
-- A planification sprint over demarcation of concept space called [Playground](https://github.com/jsanchezamai/smartgardener/wiki/Playground).
-- A sprint over fenomenologic component called [Holon](https://github.com/jsanchezamai/smartgardener/wiki/Holon).
-- A sprint over noumenologic component called [Informon](https://github.com/jsanchezamai/smartgardener/wiki/Informon).
-- A sprint to showcase SmartGardener apps release: a) [SmartGardener-holon](https://github.com/jsanchezamai/smartgardener/wiki/holon-SmartGardener) and [SmartGardener-informon](https://github.com/jsanchezamai/smartgardener/wiki/informon-SmartGardener).
+- Application context, [Playground](https://github.com/jsanchezamai/smartgardener/wiki/Playground).
+- Wall definition, [Holon](https://github.com/jsanchezamai/smartgardener/wiki/Holon).
+- Lifetime experience [Informon](https://github.com/jsanchezamai/smartgardener/wiki/Informon).
+- SmartGardener Release: [SmartGardener-holon](https://github.com/jsanchezamai/smartgardener/wiki/holon-SmartGardener) and [SmartGardener-informon](https://github.com/jsanchezamai/smartgardener/wiki/informon-SmartGardener).
 
 Road map (user point of view)
 ============
+
+[Playground](https://github.com/jsanchezamai/smartgardener/wiki/Playground)
+-----------------------
 
 User should be able to:
 
@@ -23,6 +26,10 @@ User should be able to:
 This milestone should release:
 
 - Release [SmartGardener Landing Page](https://github.com/fablabbcn/smartcitizen-landing).
+- Release [SmartGardener Node-Red Wizard](https://github.com/jsanchezamai/smartgardener/tree/playground/src/playground).
+
+[SmartGardener-holon](https://github.com/jsanchezamai/smartgardener/wiki/holon-SmartGardener)
+ ------------------------
 
 User shoud be able to:
 
@@ -35,6 +42,9 @@ This milestone should release:
 - Monitor the onboarding cycle. Calibration process. Release [SmartGardener OnBoard Wizard](https://github.com/fablabbcn/smartcitizen-onboarding-app-start).
 - Stabilize plots and monitor lifetime. Release [SmartGardener Plot Dashboard](https://github.com/fablabbcn/smartcitizen-react-dashboard)
 - Stabilize wall and monitor lifetime. Release [SmartGardener Wall Dashboard](https://github.com/fablabbcn/smartcitizen-now-dashboard).
+
+[SmartGardener-informon](https://github.com/jsanchezamai/smartgardener/wiki/informon-SmartGardener)
+-------------------
 
 User should be able to:
 
