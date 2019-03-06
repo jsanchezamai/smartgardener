@@ -1,4 +1,10 @@
-[SmartGardener](https://github.com/jsanchezamai/smartgardener/wiki) is a software to create, setup and run Ciber Green Voltaics plant walls. 
+[SmartGardener](https://github.com/jsanchezamai/smartgardener/wiki) is a software to create, setup and run Ciber Green Voltaics plant walls.
+
+Disclaimer
+=============
+We met SmartCitizen crew somewhere last summer. They don't know yet about this work.
+
+This project does not pretend a fork from SmartCitizen platform, but just to provide a template, look & feel and environment vars to specific project.
 
 Overview
 ============
