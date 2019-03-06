@@ -33,7 +33,7 @@ Road map
 
 - Release Leaf Dashboard [src](https://github.com/jsanchezamai/smartgardener/tree/master/src/playground/smartgardener-playground/LeafApp/) /
 [demo](https://jsanchezamai.github.io/smartgardener/src/playground/smartgardener-playground/LeafApp/index.html)
-- Release Steam Dashboard [src](https://github.com/jsanchezamai/smartgardener/tree/master/src/playground/smartgardener-playground/SteamApp/index.html)/ [demo](https://jsanchezamai.github.io/smartgardener/src/playground/smartgardener-playground/WallDashboard/index.html).
+- Release Steam Dashboard [src](https://github.com/jsanchezamai/smartgardener/tree/master/rc/playground/smartgardener-playground/SteamApp)/ [demo](https://jsanchezamai.github.io/smartgardener/src/playground/smartgardener-playground/SteamApp/index.html).
 
 
 [SmartGardener-informon](https://github.com/jsanchezamai/smartgardener/wiki/informon-SmartGardener)
