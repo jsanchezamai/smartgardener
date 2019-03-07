@@ -4,7 +4,7 @@ function SmartGardener(target) {
 }
 
 SmartGardener.prototype.getReadings = function (device, sensor, callback) {
-  $.getJSON('https://api.smartcitizen.me/v0/devices/'+ device.id + '/readings?sensor_id='+ sensor.id +'&rollup=4h&from=2018-08-28&to=2019-07-30' +  + '/readings', function(readings) {
+  $.getJSON('https://api.smartcitizen.me/v0/devices/'+ device.id + '/readings?sensor_id='+ sensor.id +'&rollup=1h&from=2018-08-28&to=2019-07-30' +  + '/readings', function(readings) {
 
     callback(readings);
   });
