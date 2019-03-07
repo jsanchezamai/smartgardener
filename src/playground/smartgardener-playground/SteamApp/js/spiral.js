@@ -139,7 +139,7 @@ function Spiral(target, sensor, readings) {
     })
 
 
-  var tooltip = d3.select("#chart")
+  var tooltip = d3.select(target)
   .append('div')
   .attr('class', 'tooltip');
 
@@ -164,7 +164,7 @@ function Spiral(target, sensor, readings) {
 
   })
   .on('mousemove', function(d) {
-      tooltip.style('top', (d3.event.layerY + 10) + 'px')
+      tooltip.style('top', (d3.event.layerY + 160) + 'px')
       .style('left', (d3.event.layerX - 25) + 'px');
   })
   .on('mouseout', function(d) {
