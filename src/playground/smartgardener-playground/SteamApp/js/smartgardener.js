@@ -135,13 +135,7 @@ function update() {
       $status.html('last update ' + moment(lastDeviceUpdate).fromNow());
       
       if (sensorsData) {
-        if (sensorsData[1] > sensorsData[2]) {
-          $status.append(' and battery is charging at ' + sensorsData[1] + '%');
-        } else if (sensorsData[1] >= 100) {
-          $status.append(' and battery is fully charged');
-        } else {
-          $status.append(' and battery is ' + sensorsData[1] + '%');
-        }
+        $status.append(' Battery is ' + sensorsData[5].value + '%');        
       }
 
       if (new Date() - new Date(lastDeviceUpdate) > 1000 * offlineTime) {
