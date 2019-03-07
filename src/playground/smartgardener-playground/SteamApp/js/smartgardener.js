@@ -1,30 +1,61 @@
-var tag = 'ElectronPot',
-  offlineTime = 120;
 
-$('body').append($('<h1>').text(tag)).append('<h3>').append($("<div>", {
-  "class": "kits"
-}).text("Loading..."));
+function SmartGardener(target) {
+  target = target || "#sensors";
+}
 
-io.connect('wss://ws.smartcitizen.me').on('data-received', function(device) {
-  
-  if (device.name && device.name.includes(tag)) {
-    console.log(tag)
-    $('*[data-device="' + device.id + '"]').data('lastUpdate', device.last_reading_at)
-      .data('sensorsData', device.data.sensors)
-      .removeClass('offline').addClass('online').animateCss('bounce');
-  } else {
-    console.log(device.name);
-  }
-});
+SmartGardener.prototype.getReadings = function (device, sensor, callback) {
+  $.getJSON('https://api.smartcitizen.me/v0/devices/'+ device.id + '/readings?sensor_id='+ sensor.id +'&rollup=4h&from=2018-08-28&to=2019-07-30' +  + '/readings', function(readings) {
 
+    callback(readings);
+  });
+}
+
+SmartGardener.prototype.getDevice = function (device, callback) {
+  $.getJSON('https://api.smartcitizen.me/v0/devices/'+ device.id, function(deviceData) {
+
+    callback(deviceData);
+  });
+}
+
+SmartGardener.prototype.getDevice = function (device, callback) {
+  $.getJSON('https://api.smartcitizen.me/v0/devices/'+ device.id, function(deviceData) {
+
+    callback(deviceData);
+  });
+}
+
+SmartGardener.prototype.onDevice = function (device, callback) {
+  var self = this.target;
+  $('.kits').append($("<div>", {
+    "class": "device offline",
+    "data-device": device.id
+  }).click(() => {
+    
+    new SmartGardener().getDevice(device, deviceData => {
+      deviceData.data.sensors.forEach((sensor, index) => {
+        $("#sensor"+index).empty();
+        var sc = new SmartGardener().getReadings(device, sensor, (readings) => {
+          console.log(readings);
+          var spiral = new Spiral("#sensor" + index, sensor, readings);
+        })
+      })
+    })
+  }).text(device.name).append($("<div>", {
+    "class": "status"
+  }).text("waiting for the Kit to publish...")));
+}
+
+
+/*
 $.getJSON('https://api.smartcitizen.me/v0/devices/world_map', function(devices) {
 
-  console.log(devices);
+  console.log(mapData.length);
   $('.kits').empty();
 
   devices.filter(function(device) {
     return device && device.name && device.name.includes(tag);
   }).forEach(function(device) {
+    TILER.onDevice(device);
     $('.kits').append($("<div>", {
       "class": "device offline",
       "data-device": device.id
@@ -35,6 +66,49 @@ $.getJSON('https://api.smartcitizen.me/v0/devices/world_map', function(devices) 
     }).text("waiting for the Kit to publish...")));
   });
 });
+*/
+
+var tag = 'ElectronPot',
+  offlineTime = 120;
+
+$('body').append($('<h1>').text(tag)).append('<h3>').append($("<div>", {
+  "class": "kits"
+}).text("Loading..."));
+
+/*
+io.connect('wss://ws.smartcitizen.me').on('data-received', function(device) {
+  
+  if (device.name && device.name.includes(tag)) {
+
+    $('*[data-device="' + device.id + '"]').data('lastUpdate', device.last_reading_at)
+      .data('sensorsData', device.data.sensors)
+      .removeClass('offline').addClass('online').animateCss('bounce');
+  } else {
+    TILER.onMessage(device);
+  }
+});
+*/
+/*
+$.getJSON('https://api.smartcitizen.me/v0/devices/world_map', function(devices) {
+
+  console.log(mapData.length);
+  $('.kits').empty();
+
+  devices.filter(function(device) {
+    return device && device.name && device.name.includes(tag);
+  }).forEach(function(device) {
+    TILER.onDevice(device);
+    $('.kits').append($("<div>", {
+      "class": "device offline",
+      "data-device": device.id
+    }).click(function(){
+      window.open('https://smartcitizen.me/kits/' + device.id, '_blank');
+    }).text(device.name).append($("<div>", {
+      "class": "status"
+    }).text("waiting for the Kit to publish...")));
+  });
+});
+*/
 
 update();
 
@@ -59,14 +133,14 @@ function update() {
       var $status = $(this).find('.status');
 
       $status.html('last update ' + moment(lastDeviceUpdate).fromNow());
-
+      
       if (sensorsData) {
-        if (sensorsData.bat[1] > sensorsData.bat[2]) {
-          $status.append(' and battery is charging at ' + sensorsData.bat[1] + '%');
-        } else if (sensorsData.bat[1] >= 100) {
+        if (sensorsData[1] > sensorsData[2]) {
+          $status.append(' and battery is charging at ' + sensorsData[1] + '%');
+        } else if (sensorsData[1] >= 100) {
           $status.append(' and battery is fully charged');
         } else {
-          $status.append(' and battery is ' + sensorsData.bat[1] + '%');
+          $status.append(' and battery is ' + sensorsData[1] + '%');
         }
       }
 
