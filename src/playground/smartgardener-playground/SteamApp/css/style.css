@@ -117,9 +117,15 @@ td{
 	background-position: calc(-6px + (-183.5px * 15)) 0px;
 }
 
-.scroller {
-	float:left;
-	width:520px;
-	overflow-y: auto;
-	height: 900px;
+.Row
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column
+{
+    display: table-cell;
+    background-color: red; /*Optional*/
 }
