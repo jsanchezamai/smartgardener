@@ -36,7 +36,7 @@ Further discussing with the biologist points toward the observation of the weath
 
 Everything could be better understood and predicted under methereological regions umbrella.
 
-![](sg-nd-region.png)
+![](sg-nd--region.png)
 
 Steam
 =========
