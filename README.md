@@ -22,7 +22,7 @@ Road map
 -----------------------
 
 - Release [SmartGardener Landing Page](https://github.com/fablabbcn/smartcitizen-landing).
-- Release [SmartGardener Node-Red Wizard](https://github.com/jsanchezamai/smartgardener/tree/playground/src/playground).
+- Release [SmartGardener Node-Red Wizard](https://github.com/jsanchezamai/smartgardener/blob/master/src/playground/smartgardener-node-red-wizard/README.md).
 
 [SmartGardener-holon](https://github.com/jsanchezamai/smartgardener/wiki/holon-SmartGardener)
  ------------------------
