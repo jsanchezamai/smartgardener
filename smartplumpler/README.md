@@ -196,8 +196,8 @@ Fichero de inicialización de tipos:
                 "sensors": {
                     "tempGround": 56,
                     "tempAmbient": 45,
-					"humidity": 50,
-					"moisture": 51
+                    "humidity": 50,
+                    "moisture": 51
                 }
             },
             {
@@ -205,8 +205,8 @@ Fichero de inicialización de tipos:
                 "sensors": {
                     "tempGround": 56,
                     "tempAmbient": 45,
-					"humidity": 50,
-					"moisture": 51
+                    "humidity": 50,
+                    "moisture": 51
                 }
             }
         ],
@@ -230,19 +230,19 @@ Fichero de inicialización de tipos:
             "temperatureMin": 18,
             "temperatureMax": 26,
             "humidityMin": 40,
-			"humidityMax": 75,
-			"moistureyMin": 40,
-			"moistureMax": 75,
-			"pumpingSeconds": 10
+            "humidityMax": 75,
+            "moistureMin": 40,
+            "moistureMax": 75,
+            "pumpingSeconds": 10
         },
         "night": {
             "temperatureMin": 15,
             "temperatureMax": 24,
             "humidityMin": 30,
-			"humidityMax": 70,
-			"moistureyMin": 40,
-			"moistureMax": 75,
-			"pumpingSeconds": 5
+            "humidityMax": 70,
+            "moistureMin": 40,
+            "moistureMax": 75,
+            "pumpingSeconds": 5
         }
     },
     "cron": [10, 50]
