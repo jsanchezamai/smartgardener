@@ -1,0 +1,2241 @@
+[
+    {
+        "id": "bf0113c6.994be",
+        "type": "tab",
+        "label": "DEPRECATED",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "24bf5388.a4f57c",
+        "type": "tab",
+        "label": "Scenario",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d58bdf52.bc8b4",
+        "type": "tab",
+        "label": "Tests",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "da04bcce.844ec",
+        "type": "tab",
+        "label": "UI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3573579a.6a91d8",
+        "type": "subflow",
+        "name": "Sensor",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "f44028e0.2240d8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1021,
+                "y": 251,
+                "wires": [
+                    {
+                        "id": "ad21f250.e220e",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1051,
+                "y": 375,
+                "wires": [
+                    {
+                        "id": "ad21f250.e220e",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 1060,
+                "y": 447,
+                "wires": [
+                    {
+                        "id": "ad21f250.e220e",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 1080,
+                "y": 509,
+                "wires": [
+                    {
+                        "id": "ad21f250.e220e",
+                        "port": 3
+                    }
+                ]
+            },
+            {
+                "x": 1096,
+                "y": 575,
+                "wires": [
+                    {
+                        "id": "ad21f250.e220e",
+                        "port": 4
+                    }
+                ]
+            },
+            {
+                "x": 1097,
+                "y": 644,
+                "wires": [
+                    {
+                        "id": "ad21f250.e220e",
+                        "port": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ac75fffe.41e9c",
+        "type": "subflow",
+        "name": "Readings",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 67,
+                "y": 52,
+                "wires": [
+                    {
+                        "id": "6c9ca3f3.8a450c"
+                    },
+                    {
+                        "id": "932abc07.0103e"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 638,
+                "y": 70,
+                "wires": [
+                    {
+                        "id": "6c9ca3f3.8a450c",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 963,
+                "y": 269,
+                "wires": [
+                    {
+                        "id": "1c29719f.5ac42e",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "fc93de76.56121",
+        "type": "subflow",
+        "name": "Device",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 72.5,
+                "y": 52,
+                "wires": [
+                    {
+                        "id": "329f9925.06d506"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1113,
+                "y": 334,
+                "wires": [
+                    {
+                        "id": "9d3ba322.6fb44",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1077,
+                "y": 450,
+                "wires": [
+                    {
+                        "id": "9d3ba322.6fb44",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 937,
+                "y": 488,
+                "wires": [
+                    {
+                        "id": "3db8d031.5690d",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "4b9c1aed.d33af4",
+        "type": "subflow",
+        "name": "Engine",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 199,
+                "y": 192,
+                "wires": [
+                    {
+                        "id": "28caef28.d681a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 916,
+                "y": 186,
+                "wires": [
+                    {
+                        "id": "d8ed3655.1a19b8",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "4a74665d.5a4478",
+        "type": "subflow",
+        "name": "Motor",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 113,
+                "y": 52,
+                "wires": [
+                    {
+                        "id": "2eb38fe4.8fde7"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 919,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "4cc78ed5.34678",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "20241a00.21ef86",
+        "type": "subflow",
+        "name": "Data reader",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 189,
+                "y": 94,
+                "wires": []
+            }
+        ],
+        "out": [
+            {
+                "x": 536.5,
+                "y": 201,
+                "wires": [
+                    {
+                        "id": "dd8e7b32.a82fe8",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 537,
+                "y": 245,
+                "wires": [
+                    {
+                        "id": "c083781f.41a6e8",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "f0af9102.c3dd3",
+        "type": "subflow",
+        "name": "Test Types Manager Agent",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 49.58340072631836,
+                "y": 40.833330154418945,
+                "wires": [
+                    {
+                        "id": "d5ea8b16.461758"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1056.6668434143066,
+                "y": 227.08335876464844,
+                "wires": [
+                    {
+                        "id": "4f2f66d.eb31198",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ea885d62.d5ed3",
+        "type": "subflow",
+        "name": "Test Engine Manager",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 105.00006437301636,
+                "y": 50.83328628540039,
+                "wires": [
+                    {
+                        "id": "faf75535.e0f1f8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 916.2501287460327,
+                "y": 230.41663646697998,
+                "wires": [
+                    {
+                        "id": "ecb11022.07acb",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "4c1f2415.06fc6c",
+        "type": "subflow",
+        "name": "Type Manager",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "ad1407cb.d33cb8",
+        "type": "subflow",
+        "name": "Engine Manager",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "b39db9cd.0e27a8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Smart Pumping",
+        "tab": "eb67254.1b583d8",
+        "order": 1,
+        "disp": true,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "eb67254.1b583d8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Gantt",
+        "icon": "dashboard"
+    },
+    {
+        "id": "158b0b00.3bf605",
+        "type": "ui_group",
+        "z": "",
+        "name": "Legend",
+        "tab": "eb67254.1b583d8",
+        "order": 2,
+        "disp": true,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "7bf9fc08.5e6c34",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1168dd4a.c9d123",
+        "type": "inject",
+        "z": "20241a00.21ef86",
+        "name": "make request 5616",
+        "topic": "Init for device",
+        "payload": "5616",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.3",
+        "x": 182,
+        "y": 199,
+        "wires": [
+            [
+                "dd8e7b32.a82fe8"
+            ]
+        ]
+    },
+    {
+        "id": "f44028e0.2240d8",
+        "type": "json",
+        "z": "3573579a.6a91d8",
+        "name": "Payload",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 184,
+        "y": 116,
+        "wires": [
+            [
+                "beb503f7.dc33c"
+            ]
+        ]
+    },
+    {
+        "id": "beb503f7.dc33c",
+        "type": "json",
+        "z": "3573579a.6a91d8",
+        "name": "Data",
+        "property": "payload.data",
+        "action": "",
+        "pretty": true,
+        "x": 278,
+        "y": 194,
+        "wires": [
+            [
+                "1001e3bc.af17ac"
+            ]
+        ]
+    },
+    {
+        "id": "736b0a73.c89d54",
+        "type": "json",
+        "z": "3573579a.6a91d8",
+        "name": "Sensors",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 451,
+        "y": 357,
+        "wires": [
+            [
+                "277b7288.fbda6e"
+            ]
+        ]
+    },
+    {
+        "id": "1001e3bc.af17ac",
+        "type": "change",
+        "z": "3573579a.6a91d8",
+        "name": "Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 373,
+        "y": 258,
+        "wires": [
+            [
+                "736b0a73.c89d54"
+            ]
+        ]
+    },
+    {
+        "id": "277b7288.fbda6e",
+        "type": "change",
+        "z": "3573579a.6a91d8",
+        "name": "Sensors",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.sensors",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 561,
+        "y": 449,
+        "wires": [
+            [
+                "a21d632b.2db5f"
+            ]
+        ]
+    },
+    {
+        "id": "a21d632b.2db5f",
+        "type": "split",
+        "z": "3573579a.6a91d8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 718,
+        "y": 449,
+        "wires": [
+            [
+                "ad21f250.e220e"
+            ]
+        ]
+    },
+    {
+        "id": "ad21f250.e220e",
+        "type": "switch",
+        "z": "3573579a.6a91d8",
+        "name": "Sensor",
+        "property": "payload.id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "51",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "55",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "14",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "56",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "50",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 893,
+        "y": 448,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6c9ca3f3.8a450c",
+        "type": "function",
+        "z": "ac75fffe.41e9c",
+        "name": "Last Reading",
+        "func": "var sensor = msg.payload;\n\nvar text = sensor.name;\ntext += \": \" + sensor.value;\ntext += \" (\" + sensor.unit + \")\";\n\nvar info = {};\n\ninfo.device_id = msg.payload.device_id;\ninfo.text = text;\ninfo.id = sensor.id;\ninfo.value = sensor.value;\ninfo.updated_at = sensor.updated_at;\n\nmsg.payload = info;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 254,
+        "y": 72,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe7b63d.17d84a",
+        "type": "debug",
+        "z": "bf0113c6.994be",
+        "name": "DO FOR DAY",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 929,
+        "y": 266,
+        "wires": []
+    },
+    {
+        "id": "932abc07.0103e",
+        "type": "function",
+        "z": "ac75fffe.41e9c",
+        "name": "Historical Readings",
+        "func": "var sensor = msg.payload;\n\nvar url = \"https://api.smartcitizen.me/v0/devices/\";\n\nurl += msg.payload.device_id;\nurl += \"/readings?sensor_id=\" + sensor.id;\nurl += \"&rollup=4h&from=2015-07-28&to=20-07-30\";\n\nmsg.url = url;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 259,
+        "y": 171,
+        "wires": [
+            [
+                "1f3b987d.72c9a8"
+            ]
+        ]
+    },
+    {
+        "id": "1f3b987d.72c9a8",
+        "type": "http request",
+        "z": "ac75fffe.41e9c",
+        "name": "GET READINGS",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "tls": "",
+        "x": 444,
+        "y": 269,
+        "wires": [
+            [
+                "988be866.1adff8"
+            ]
+        ]
+    },
+    {
+        "id": "988be866.1adff8",
+        "type": "json",
+        "z": "ac75fffe.41e9c",
+        "name": "Readings",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 617,
+        "y": 270,
+        "wires": [
+            [
+                "1c29719f.5ac42e"
+            ]
+        ]
+    },
+    {
+        "id": "1c29719f.5ac42e",
+        "type": "change",
+        "z": "ac75fffe.41e9c",
+        "name": "Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 798,
+        "y": 272,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "448c837f.064f1c",
+        "type": "subflow:fc93de76.56121",
+        "z": "4b9c1aed.d33af4",
+        "name": "",
+        "x": 585.25,
+        "y": 191,
+        "wires": [
+            [
+                "d8ed3655.1a19b8"
+            ],
+            [
+                "d8ed3655.1a19b8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1477e4e4.3d090b",
+        "type": "http request",
+        "z": "fc93de76.56121",
+        "name": "Get device",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "tls": "",
+        "x": 408.5,
+        "y": 110,
+        "wires": [
+            [
+                "318502f7.0874ce"
+            ]
+        ]
+    },
+    {
+        "id": "318502f7.0874ce",
+        "type": "subflow:3573579a.6a91d8",
+        "z": "fc93de76.56121",
+        "name": "Interesting sensors",
+        "x": 516,
+        "y": 270.5,
+        "wires": [
+            [
+                "178a6571.4486eb"
+            ],
+            [
+                "178a6571.4486eb"
+            ],
+            [
+                "178a6571.4486eb"
+            ],
+            [
+                "178a6571.4486eb"
+            ],
+            [
+                "178a6571.4486eb"
+            ],
+            [
+                "3db8d031.5690d"
+            ]
+        ]
+    },
+    {
+        "id": "3db8d031.5690d",
+        "type": "function",
+        "z": "fc93de76.56121",
+        "name": "",
+        "func": "var sensor = msg.payload;\n\nvar text = sensor.name;\ntext += \": \" + sensor.value;\ntext += \" (\" + sensor.unit + \")\";\n\nvar info = {};\n\ninfo.text = \"NOT \" + text;\ninfo.id = sensor.id;\n\nmsg.payload = info\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 749,
+        "y": 469,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d3ba322.6fb44",
+        "type": "subflow:ac75fffe.41e9c",
+        "z": "fc93de76.56121",
+        "name": "",
+        "x": 957,
+        "y": 253,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "329f9925.06d506",
+        "type": "function",
+        "z": "fc93de76.56121",
+        "name": "Save device id",
+        "func": "/**\n * Expects payload:\n *  device_id\n */\n\nflow.set(\"device_id\", msg.payload);\n\nmsg.url = \"https://api.smartcitizen.me/v0/devices/\" + msg.payload;\nmsg.topic = \"Requesting for device\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 210,
+        "y": 111,
+        "wires": [
+            [
+                "1477e4e4.3d090b"
+            ]
+        ]
+    },
+    {
+        "id": "178a6571.4486eb",
+        "type": "function",
+        "z": "fc93de76.56121",
+        "name": "Attach device id",
+        "func": "msg.payload.device_id = flow.get(\"device_id\");\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 781,
+        "y": 253,
+        "wires": [
+            [
+                "9d3ba322.6fb44"
+            ]
+        ]
+    },
+    {
+        "id": "d8ed3655.1a19b8",
+        "type": "function",
+        "z": "4b9c1aed.d33af4",
+        "name": "Chain",
+        "func": "var FASE_ID = \"Fase\" + msg.payload.device_id\nvar DEVICE_ID = msg.payload.device_id;\n\nvar processChain = flow.get(FASE_ID);\n\nif (!processChain) processChain = {}\n\nvar item_id = \"ID-\" + DEVICE_ID;\nif (msg.payload[\"readings\"]) {\n    item_id += \"-\" + msg.payload.sensor_id;\n    // console.log(\"Engine.chain: LAST FOR: \" + item_id);\n} else {\n    item_id += \"-\" + msg.payload.id;\n    // console.log(\"Engine.chain: HISTORIAL FOR:\" + item_id);\n}\n\nvar node = processChain[item_id];\n\nif (!node) node = {};\n\nif (msg.payload[\"readings\"]) {\n\n    node.readings = msg.payload;    \n    \n} else {\n    \n    node.item = msg.payload;\n}\n\nprocessChain[item_id] = node;\n\nflow.set(FASE_ID, processChain);\n\n//\n\nvar store = global.get(\"store\");\n\nvar works = store.Works;\n\nworks.readings[\"ID_\" + DEVICE_ID] = processChain;\n\nstore.Works = works;\n\nglobal.set(\"store\", store);\n\nmsg.payload = processChain;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 804.9999809265137,
+        "y": 186.00000953674316,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28caef28.d681a",
+        "type": "function",
+        "z": "4b9c1aed.d33af4",
+        "name": "Init chain",
+        "func": "var store = global.get(\"store\");\n\nvar actions = store.Actions;\n\nactions.push({action: \"READ\", desc: \"Got order to read device! \", time: new Date()});\n\nstore.actions = actions;\n\nvar works = store.Works;\n\nif (!works) works = { tasks: [], readings: {}};\nworks.tasks.push(msg.payload);\nworks.readings[\"ID_\" + msg.payload] = {}; \nstore.Works = works;\n\nglobal.set(\"store\", store);\n\n\n// Create Fase for device\nflow.set(\"Fase\" + msg.payload, {});\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 396,
+        "y": 194,
+        "wires": [
+            [
+                "448c837f.064f1c"
+            ]
+        ]
+    },
+    {
+        "id": "c23231a6.5bd74",
+        "type": "inject",
+        "z": "20241a00.21ef86",
+        "name": "make request 5619",
+        "topic": "Init for device",
+        "payload": "5619",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0,3",
+        "x": 176,
+        "y": 245,
+        "wires": [
+            [
+                "c083781f.41a6e8"
+            ]
+        ]
+    },
+    {
+        "id": "dd8e7b32.a82fe8",
+        "type": "subflow:4b9c1aed.d33af4",
+        "z": "20241a00.21ef86",
+        "name": "Engine",
+        "x": 406.5,
+        "y": 201,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c083781f.41a6e8",
+        "type": "subflow:4b9c1aed.d33af4",
+        "z": "20241a00.21ef86",
+        "name": "Engine",
+        "x": 407,
+        "y": 245,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2eb38fe4.8fde7",
+        "type": "function",
+        "z": "4a74665d.5a4478",
+        "name": "Pumping",
+        "func": "var circadian = new Date().getHours();\n\nmsg.payload.circadian = circadian < 12 ? \"NIGHT\" : \"DAY\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 322,
+        "y": 116,
+        "wires": [
+            [
+                "a741a148.d129d"
+            ]
+        ]
+    },
+    {
+        "id": "a741a148.d129d",
+        "type": "switch",
+        "z": "4a74665d.5a4478",
+        "name": "Circadian",
+        "property": "payload.circadian",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "DAY",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "NIGHT",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 542,
+        "y": 115,
+        "wires": [
+            [
+                "4cc78ed5.34678"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "57952cb3.b5dc04",
+        "type": "debug",
+        "z": "bf0113c6.994be",
+        "name": "DO FOR NIGHT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 927,
+        "y": 361,
+        "wires": []
+    },
+    {
+        "id": "599b607.fabd4a",
+        "type": "subflow:4a74665d.5a4478",
+        "z": "bf0113c6.994be",
+        "name": "",
+        "x": 680.5,
+        "y": 220.5,
+        "wires": [
+            [
+                "3f5a8551.52403a"
+            ]
+        ]
+    },
+    {
+        "id": "cafc44e0.7d6c58",
+        "type": "subflow:20241a00.21ef86",
+        "z": "bf0113c6.994be",
+        "name": "Read data",
+        "x": 471.5,
+        "y": 105,
+        "wires": [
+            [
+                "599b607.fabd4a"
+            ],
+            [
+                "599b607.fabd4a"
+            ]
+        ]
+    },
+    {
+        "id": "4cc78ed5.34678",
+        "type": "function",
+        "z": "4a74665d.5a4478",
+        "name": "Wait for all",
+        "func": "var devices = global.get(\"Devices\");\nvar results = global.get(\"Results\");\n\nmsg.payload = null;\n\ndevices.map(d => {\n\n    var device = global.get(\"ID_\" + d);\n    \n    var alls = [];\n    \n    if (Object.keys(device).length == 6) {\n        \n        var elements = Object.keys(device);\n        \n        elements.map(key => {\n            alls.push((device[key][\"readings\"] && device[key][\"item\"]));\n        });\n        \n    }\n    \n    console.log(results);\n    \n    if (results.indexOf(d) == -1) {\n        console.log(alls);\n        if(alls.filter(e => e).length == 5) {\n            results.push(d)\n            global.set(\"Results\", d);\n        }    \n    }\n    \n});\n\nif (results.length == 2) {\n    msg.payload = results;    \n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 736,
+        "y": 218,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85952411.37f218",
+        "type": "function",
+        "z": "bf0113c6.994be",
+        "name": "Init process",
+        "func": "global.set(\"Devices\", []);\nglobal.set(\"Results\", []);\nvar results = global.get(\"Results\");\nconsole.log(\"Re\", results);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 265,
+        "y": 179,
+        "wires": [
+            [
+                "cafc44e0.7d6c58"
+            ]
+        ]
+    },
+    {
+        "id": "7f54e256.9e9fcc",
+        "type": "inject",
+        "z": "bf0113c6.994be",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 122,
+        "y": 84,
+        "wires": [
+            [
+                "85952411.37f218"
+            ]
+        ]
+    },
+    {
+        "id": "3f5a8551.52403a",
+        "type": "switch",
+        "z": "bf0113c6.994be",
+        "name": "RESULTS",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 649,
+        "y": 449,
+        "wires": [
+            [
+                "fe7b63d.17d84a"
+            ]
+        ]
+    },
+    {
+        "id": "d5ea8b16.461758",
+        "type": "http request",
+        "z": "f0af9102.c3dd3",
+        "name": "Test Types Manager Initialization",
+        "method": "POST",
+        "ret": "obj",
+        "url": "localhost:1880/type_manager",
+        "tls": "",
+        "x": 247.08340454101562,
+        "y": 42.083330154418945,
+        "wires": [
+            [
+                "dd5c640c.ce9c78",
+                "1d0ba747.7966a9"
+            ]
+        ]
+    },
+    {
+        "id": "da88fbe4.afee48",
+        "type": "inject",
+        "z": "d58bdf52.bc8b4",
+        "name": "Test Types Manager Agent",
+        "topic": "Initial types",
+        "payload": "{\"truthField\":{\"sensors\":[{\"device_id\":5616,\"sensors\":{\"tempGround\":51,\"tempAmbient\":55,\"moistureGround\":50,\"humidity\":56}},{\"device_id\":5619,\"sensors\":{\"tempGround\":51,\"tempAmbient\":55,\"moistureGround\":50,\"humidity\":56}}],\"actuators\":[{\"knx_id\":23,\"groupAddress\":\"01>01>02\",\"features\":[{\"featureStart\":\"ON\"},{\"featureStop\":\"OFF\"}]}]},\"formula\":{\"day\":{\"temperatureMin\":8,\"temperatureMax\":86,\"humidityMin\":0,\"humidityMax\":175,\"moistureMin\":340,\"moistureMax\":950,\"pumpingSeconds\":10},\"night\":{\"temperatureMin\":8,\"temperatureMax\":86,\"humidityMin\":0,\"humidityMax\":175,\"moistureMin\":340,\"moistureMax\":950,\"pumpingSeconds\":10}},\"cron\":[10]}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 188.333345413208,
+        "y": 54.166672706604004,
+        "wires": [
+            [
+                "d85771b9.02f32"
+            ]
+        ]
+    },
+    {
+        "id": "dd5c640c.ce9c78",
+        "type": "debug",
+        "z": "f0af9102.c3dd3",
+        "name": "Response status",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 264.5833854675293,
+        "y": 115.83335876464844,
+        "wires": []
+    },
+    {
+        "id": "1d0ba747.7966a9",
+        "type": "json",
+        "z": "f0af9102.c3dd3",
+        "name": "Response",
+        "property": "payload.data",
+        "action": "",
+        "pretty": true,
+        "x": 498.75001525878906,
+        "y": 41.2500057220459,
+        "wires": [
+            [
+                "3706a2ae.c820ce",
+                "35a222d8.d5924e"
+            ]
+        ]
+    },
+    {
+        "id": "754b6ec7.c5537",
+        "type": "http in",
+        "z": "4c1f2415.06fc6c",
+        "name": "TYPE_MANAGER POST",
+        "url": "type_manager",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 165.00000858306885,
+        "y": 100.83341407775879,
+        "wires": [
+            [
+                "5a90dc9f.aacbe4"
+            ]
+        ]
+    },
+    {
+        "id": "3250c3e1.99a38c",
+        "type": "http response",
+        "z": "4c1f2415.06fc6c",
+        "name": "RESPONSE",
+        "statusCode": "",
+        "headers": {},
+        "x": 864.1666536331177,
+        "y": 102.16675758361816,
+        "wires": []
+    },
+    {
+        "id": "52ce8a2c.573a84",
+        "type": "function",
+        "z": "4c1f2415.06fc6c",
+        "name": "Response",
+        "func": "var types = global.get(\"store\").Types;\n\nvar response = {\n    info: \"Your request is saved. \",\n    data: JSON.stringify(types)\n\n};\n\nmsg.payload = JSON.stringify(response);\n\nmsg.statusCode = 200;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 689.1666841506958,
+        "y": 102.83342266082764,
+        "wires": [
+            [
+                "3250c3e1.99a38c"
+            ]
+        ]
+    },
+    {
+        "id": "47dcf24f.3d3abc",
+        "type": "function",
+        "z": "4c1f2415.06fc6c",
+        "name": "Request",
+        "func": "var store = {\n    Types: JSON.parse(msg.payload),\n    EngineStatus: \"OFF\",\n    Actions: [{ action: \"TYPES\", desc: \"Got types! \", time: new Date()}]\n};\n\nvar store = global.set(\"store\", store);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 521.8334093093872,
+        "y": 101.50010395050049,
+        "wires": [
+            [
+                "52ce8a2c.573a84"
+            ]
+        ]
+    },
+    {
+        "id": "5a90dc9f.aacbe4",
+        "type": "json",
+        "z": "4c1f2415.06fc6c",
+        "name": "Types",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 363.5000467300415,
+        "y": 101.83345413208008,
+        "wires": [
+            [
+                "47dcf24f.3d3abc"
+            ]
+        ]
+    },
+    {
+        "id": "3706a2ae.c820ce",
+        "type": "debug",
+        "z": "f0af9102.c3dd3",
+        "name": "Response data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.data",
+        "x": 708.3334732055664,
+        "y": 42.500017166137695,
+        "wires": []
+    },
+    {
+        "id": "5c62a9b2.e9c7d8",
+        "type": "debug",
+        "z": "d58bdf52.bc8b4",
+        "name": "Test",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 675.8333320617676,
+        "y": 54.16673946380615,
+        "wires": []
+    },
+    {
+        "id": "56fc8ac4.2e2944",
+        "type": "function",
+        "z": "f0af9102.c3dd3",
+        "name": "ObjectsAreEqual",
+        "func": "/**\n * AUXILIAR FUNCTIONS\n * \n */\nvar compareObjects = function(obj1, obj2) {\n    \n     var flag=true;\n     var out = [];\n\n    if(Object.keys(obj1).length == Object.keys(obj2).length){\n        \n        for(var key in obj1) { \n            \n            \n            if( typeof obj1[key] == 'object') {\n                if(compareObjects(obj1[key], obj2[key])){\n                    continue;\n                }\n            } else {\n                if(obj1[key] == obj2[key]){\n                    continue;\n                }                \n            }\n            \n            \n            out  = JSON.stringify(obj1[key]) == JSON.stringify(obj2[key]);\n            flag = false;\n            break;\n            \n        }\n    }\n    else {\n        flag = false;\n    }\n    return flag;\n};\n\nmsg.payload = compareObjects(msg.payload.ObjectA, msg.payload.ObjectB);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 959.1666355133057,
+        "y": 120.41665840148926,
+        "wires": [
+            [
+                "4f2f66d.eb31198"
+            ]
+        ]
+    },
+    {
+        "id": "4f2f66d.eb31198",
+        "type": "function",
+        "z": "f0af9102.c3dd3",
+        "name": "Tests result",
+        "func": "var result = msg.payload;\n\nif (!result) {\n    result = {\n        store: store.Types,\n        payload: msg.payload.data,\n        end: result\n    }\n}\n\nmsg.payload = result;\nmsg.topic = \"TEST TYPES MANAGER RESULT\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 855.4168395996094,
+        "y": 230.83335876464844,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35a222d8.d5924e",
+        "type": "function",
+        "z": "f0af9102.c3dd3",
+        "name": "Compare given params with Global.Store.Types",
+        "func": "var store = global.get(\"store\");\n\nmsg.payload.ObjectA = msg.payload.data;\nmsg.payload.ObjectB = store.Types;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 639.5833206176758,
+        "y": 120.41663551330566,
+        "wires": [
+            [
+                "56fc8ac4.2e2944"
+            ]
+        ]
+    },
+    {
+        "id": "c4c1bc4d.0fd2b",
+        "type": "http in",
+        "z": "ad1407cb.d33cb8",
+        "name": "ENGINE_MANAGER POST",
+        "url": "engine_manager",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 194.99998474121094,
+        "y": 85,
+        "wires": [
+            [
+                "4b95e20e.8f64fc"
+            ]
+        ]
+    },
+    {
+        "id": "18231cc7.b05703",
+        "type": "http response",
+        "z": "ad1407cb.d33cb8",
+        "name": "RESPONSE",
+        "statusCode": "",
+        "headers": {},
+        "x": 894.1666297912598,
+        "y": 86.33334350585938,
+        "wires": []
+    },
+    {
+        "id": "555ba514.1d7c2c",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Response",
+        "func": "var status = global.get(\"store\").EngineStatus;\n\nvar response = {\n    info: \"Service current status.\",\n    data: status\n\n};\n\nmsg.payload = JSON.stringify(response);\n\nmsg.statusCode = 200;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 695.833366394043,
+        "y": 85.33334159851074,
+        "wires": [
+            [
+                "18231cc7.b05703"
+            ]
+        ]
+    },
+    {
+        "id": "4b95e20e.8f64fc",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Request",
+        "func": "var store = global.get(\"store\");\n\nstore.EngineStatus = msg.payload;\n\nvar actions = store.Actions;\n\nactions.push({action: \"STATUS_\" + msg.payload, desc: \"Got status change!\", time: new Date()});\n\nstore.actions = actions;\n\nglobal.set(\"store\", store);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 483.5000762939453,
+        "y": 87.33335781097412,
+        "wires": [
+            [
+                "555ba514.1d7c2c"
+            ]
+        ]
+    },
+    {
+        "id": "4fcda14e.4dc3e",
+        "type": "inject",
+        "z": "d58bdf52.bc8b4",
+        "name": "Test Engine Manager Agent: ON",
+        "topic": "Initial types",
+        "payload": "ON",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "x": 185,
+        "y": 163.33335494995117,
+        "wires": [
+            [
+                "fffbf9d5.cb84c8"
+            ]
+        ]
+    },
+    {
+        "id": "faf75535.e0f1f8",
+        "type": "http request",
+        "z": "ea885d62.d5ed3",
+        "name": "Test Engine Manager mechanism",
+        "method": "POST",
+        "ret": "obj",
+        "url": "localhost:1880/engine_manager",
+        "tls": "",
+        "x": 333.7500801086426,
+        "y": 48.333290100097656,
+        "wires": [
+            [
+                "fa1c19a5.aa2df8",
+                "33f321e8.ef333e"
+            ]
+        ]
+    },
+    {
+        "id": "245f38cb.fe74f8",
+        "type": "debug",
+        "z": "d58bdf52.bc8b4",
+        "name": "Test",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 717.4999465942383,
+        "y": 196.66662216186523,
+        "wires": []
+    },
+    {
+        "id": "ecb11022.07acb",
+        "type": "function",
+        "z": "ea885d62.d5ed3",
+        "name": "Tests result",
+        "func": "var store = global.get(\"store\");\n\nvar result =  msg.payload == store.EngineStatus;\n\nif (!result) {\n    result = {\n        store: store.EngineStatus,\n        payload: msg.payload,\n        end: result\n    }\n}\n\nmsg.payload = result;\nmsg.topic = \"TEST ENGINE MANAGER RESULT\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 745.0001220703125,
+        "y": 227.9166374206543,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d68a842.90d8c8",
+        "type": "function",
+        "z": "ea885d62.d5ed3",
+        "name": "Compare given params with Global.Store.EngineStatus",
+        "func": "msg.payload = msg.payload.data;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 375.41664123535156,
+        "y": 226.6665391921997,
+        "wires": [
+            [
+                "ecb11022.07acb"
+            ]
+        ]
+    },
+    {
+        "id": "2d36fa61.5ec026",
+        "type": "debug",
+        "z": "ea885d62.d5ed3",
+        "name": "Response data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.data",
+        "x": 769.5833206176758,
+        "y": 115.83328628540039,
+        "wires": []
+    },
+    {
+        "id": "fa1c19a5.aa2df8",
+        "type": "json",
+        "z": "ea885d62.d5ed3",
+        "name": "Response",
+        "property": "payload.data",
+        "action": "str",
+        "pretty": false,
+        "x": 555.8332862854004,
+        "y": 115.41657066345215,
+        "wires": [
+            [
+                "2d36fa61.5ec026",
+                "9d68a842.90d8c8"
+            ]
+        ]
+    },
+    {
+        "id": "4ec4e0a9.08d8e",
+        "type": "inject",
+        "z": "d58bdf52.bc8b4",
+        "name": "Test Engine Manager Agent: OFF",
+        "topic": "Initial types",
+        "payload": "OFF",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "x": 183.3333282470703,
+        "y": 238.3333625793457,
+        "wires": [
+            [
+                "fffbf9d5.cb84c8"
+            ]
+        ]
+    },
+    {
+        "id": "4f484969.5d30f8",
+        "type": "inject",
+        "z": "ad1407cb.d33cb8",
+        "name": "Each hour",
+        "topic": "Main cron",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 177.91673278808594,
+        "y": 229.1667709350586,
+        "wires": [
+            [
+                "e477f0ec.488e7"
+            ]
+        ]
+    },
+    {
+        "id": "40504343.a9976c",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Compute status",
+        "func": "var store = global.get(\"store\");\n\nvar status = store.EngineStatus;\n\nswitch(status) {\n    case \"OFF\":\n        msg.topic = \"Off\";\n        return [msg];\n    case \"ON\":\n        msg.topic = \"On\";\n        return [msg, msg];\n    case \"PUMPING\":\n        msg.topic = \"Pumping\";\n        return [msg, msg, msg];\n    case \"WORKING\":\n        msg.payload = \"Wait please!\";\n        msg.topic = \"Working\";\n        return [msg, msg, msg, msg];\n    case \"BRAINIZE\":\n        return [msg, msg, msg, msg, msg];\n    case \"COMPUTED\":\n        return [msg, msg, msg, msg, msg, msg];        \n    default:\n        return msg;\n    \n}",
+        "outputs": 6,
+        "noerr": 0,
+        "x": 116.99998474121094,
+        "y": 401.66670989990234,
+        "wires": [
+            [
+                "755088c2.9e6568"
+            ],
+            [
+                "24bdd26.3c5122e"
+            ],
+            [
+                "adee7c3e.27592"
+            ],
+            [
+                "7f918a93.b7dcd4"
+            ],
+            [
+                "1445025a.c86cbe"
+            ],
+            [
+                "4b66f9d.2a0a208"
+            ]
+        ]
+    },
+    {
+        "id": "7de486e3.11e8c8",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Check if START pumping BY cron",
+        "func": "var store = global.get(\"store\");\nvar types = store.Types; \nvar cron = types.cron;\n\n\nvar nowSeconds = new Date().getSeconds();\n\nvar mustPump = cron.filter(c => c == nowSeconds);\n\nvar premise = \"Now is: \" + nowSeconds + \" configured is: \" + cron.toString();\n\nif (mustPump.length == 1) {\n    msg.payload = \"DoPumping > \" + premise;\n    msg.topic = \"State mode ON. Need to pump?\";\n    return [msg, msg];\n} else {\n    msg.payload = \"Idle > \" + premise;\n    msg.topic = \"State mode ON. Need to pump?\";\n    store.Actions.push({ action: \"IDLE\", desc: \"Waiting for cron!\", time: new Date()});\n    global.set(\"store\", store);    \n    return [msg];\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 777.8334274291992,
+        "y": 486.5833282470703,
+        "wires": [
+            [
+                "2a5c0bb8.525ac4"
+            ],
+            [
+                "eb1c1384.51836"
+            ]
+        ]
+    },
+    {
+        "id": "e477f0ec.488e7",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Ready to work?",
+        "func": "var readyToWork = false;\n\nvar store = global.get(\"store\");\n\nreadyToWork = store === undefined ? false : true;\n\nif (readyToWork) {\n    \n    var types = store.Types;\n    \n    readyToWork = readyToWork && types ? true : false;\n    \n    var status = store.EngineStatus;\n    \n    readyToWork = readyToWork && status ? true : false;    \n    \n}\n\nif (readyToWork) {\n    msg.topic = \"Configured!\";\n    msg.payload = store.Actions;\n} else {\n    msg.topic = \"Not configured!\";\n    msg.payload = \"Please use Type Manager Agent to init service. Then use Engine Manager Agent to start it!\";\n}\n\n\nvar result = readyToWork ? [msg, msg] : [msg];\n\nreturn result;",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 402.50004959106445,
+        "y": 231.0001220703125,
+        "wires": [
+            [
+                "1b354394.8396ac"
+            ],
+            [
+                "40504343.a9976c"
+            ]
+        ]
+    },
+    {
+        "id": "1b354394.8396ac",
+        "type": "debug",
+        "z": "ad1407cb.d33cb8",
+        "name": "Ready to work",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 659.1666603088379,
+        "y": 226.00003361701965,
+        "wires": []
+    },
+    {
+        "id": "4ce31a54.cffb04",
+        "type": "debug",
+        "z": "ad1407cb.d33cb8",
+        "name": "Current status",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 700.7500762939453,
+        "y": 356.83335876464844,
+        "wires": []
+    },
+    {
+        "id": "d85771b9.02f32",
+        "type": "subflow:f0af9102.c3dd3",
+        "z": "d58bdf52.bc8b4",
+        "name": "",
+        "x": 457.91676330566406,
+        "y": 53.750030517578125,
+        "wires": [
+            [
+                "5c62a9b2.e9c7d8"
+            ]
+        ]
+    },
+    {
+        "id": "fffbf9d5.cb84c8",
+        "type": "subflow:ea885d62.d5ed3",
+        "z": "d58bdf52.bc8b4",
+        "name": "",
+        "x": 506.66673278808594,
+        "y": 196.24998474121094,
+        "wires": [
+            [
+                "245f38cb.fe74f8"
+            ]
+        ]
+    },
+    {
+        "id": "33f321e8.ef333e",
+        "type": "debug",
+        "z": "ea885d62.d5ed3",
+        "name": "Response status",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 689.5832710266113,
+        "y": 46.25000762939453,
+        "wires": []
+    },
+    {
+        "id": "3e4add0e.900de2",
+        "type": "subflow:4c1f2415.06fc6c",
+        "z": "24bf5388.a4f57c",
+        "name": "",
+        "x": 114.375,
+        "y": 72.5,
+        "wires": []
+    },
+    {
+        "id": "352f2ae9.7932a6",
+        "type": "subflow:ad1407cb.d33cb8",
+        "z": "24bf5388.a4f57c",
+        "name": "",
+        "x": 121.87501525878906,
+        "y": 118.75000953674316,
+        "wires": []
+    },
+    {
+        "id": "755088c2.9e6568",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "OFF",
+        "func": "if (!msg.payload) {\n    msg.payload = null;\n    return;\n}\n\nvar store = global.get(\"store\");\n\nvar status = store.EngineStatus;\n\nif (status != \"OFF\") {\n    return;\n}\n\n msg.payload = \"Current status: OFF. Use Engine Management Agent to start service!\";\n msg.topic = \"Current state\";\n \n return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480.74999809265137,
+        "y": 394.4999990463257,
+        "wires": [
+            [
+                "4ce31a54.cffb04"
+            ]
+        ]
+    },
+    {
+        "id": "24bdd26.3c5122e",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "ON",
+        "func": "if (!msg.payload) {\n    msg.payload = null;\n    return;\n}\n\nvar store = global.get(\"store\");\n\nvar status = store.EngineStatus;\n\nif (status != \"ON\") {\n    return;\n}\n\n msg.payload = \"Current status: ON. Will try to determinate if pumping time has arrive\";\n msg.topic = \"Current state\";\n \n return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 449.99999618530273,
+        "y": 455.25,
+        "wires": [
+            [
+                "4ce31a54.cffb04",
+                "7de486e3.11e8c8"
+            ]
+        ]
+    },
+    {
+        "id": "adee7c3e.27592",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "PUMPING",
+        "func": "if (!msg.payload) {\n    msg.payload = null;\n    return;\n}\n\nvar store = global.get(\"store\");\n\nvar status = store.EngineStatus;\n\nif (status != \"PUMPING\") {\n    return;\n}\n\n return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 429.2500343322754,
+        "y": 521.5000152587891,
+        "wires": [
+            [
+                "4ce31a54.cffb04",
+                "26d3066f.fac0da"
+            ]
+        ]
+    },
+    {
+        "id": "2a5c0bb8.525ac4",
+        "type": "debug",
+        "z": "ad1407cb.d33cb8",
+        "name": "Idle",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1070.2499961853027,
+        "y": 379.4999990463257,
+        "wires": []
+    },
+    {
+        "id": "60550a74.e904a4",
+        "type": "debug",
+        "z": "ad1407cb.d33cb8",
+        "name": "Need to start pumping",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1512.5000305175781,
+        "y": 790.5000896453857,
+        "wires": []
+    },
+    {
+        "id": "eb1c1384.51836",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Check if START pumping BY conditions",
+        "func": "var store = global.get(\"store\");\nvar types = store.Types; \n\nvar actions = store.Actions;\n\nactions.push({action: \"CRON\", desc: \"Cron fired!\", time: new Date()});\n\nstore.Actions = actions;\n\nstore.EngineStatus = \"WORKING\";\n\nglobal.set(\"store\", store);\n\nvar devices = store.Types.truthField.sensors;\n\nglobal.set(\"Devices\", []);\nglobal.set(\"Results\", []);\n\nvar messages = devices.map(\n    d => { return { payload: d.device_id } });\n\nreturn messages;",
+        "outputs": 3,
+        "noerr": 0,
+        "x": 1068.999984741211,
+        "y": 554.2500057220459,
+        "wires": [
+            [
+                "b4bcaf22.ed5ae",
+                "51ba8a90.5d5684"
+            ],
+            [
+                "c483ae8c.9dd43"
+            ],
+            [
+                "fdc26525.246bf8"
+            ]
+        ]
+    },
+    {
+        "id": "26d3066f.fac0da",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Check if STOP pumping",
+        "func": "console.log(\"IF STOP\", msg.payload);\n\nvar store = global.get(\"store\");\n\nvar pumpingEngine = store.Works.ShouldPump;\n\nconsole.log(\"pumping until\", pumpingEngine.until);\nconsole.log(\"pumping until, left\", pumpingEngine.until - new Date());\n\nif( pumpingEngine.until - new Date() < 0 ) {\n    store.Actions.push({action: \"PUMP_FINISH\", desc: \"Stop pumping!\", time: new Date()});\n    store.EngineStatus = \"ON\";\n}\n\nglobal.set(\"store\", store);",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 797.2499923706055,
+        "y": 629.0000247955322,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b4bcaf22.ed5ae",
+        "type": "debug",
+        "z": "ad1407cb.d33cb8",
+        "name": "Pump by conditions",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1337.01957321167,
+        "y": 440.00390625,
+        "wires": []
+    },
+    {
+        "id": "6bbdb8d0.eb0018",
+        "type": "subflow:4b9c1aed.d33af4",
+        "z": "bf0113c6.994be",
+        "name": "Engine",
+        "x": 265.01953125,
+        "y": 281.00390625,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51ba8a90.5d5684",
+        "type": "subflow:4b9c1aed.d33af4",
+        "z": "ad1407cb.d33cb8",
+        "name": "Engine",
+        "x": 1436.0195446014404,
+        "y": 531.0039501190186,
+        "wires": [
+            [
+                "60550a74.e904a4"
+            ]
+        ]
+    },
+    {
+        "id": "c483ae8c.9dd43",
+        "type": "subflow:4b9c1aed.d33af4",
+        "z": "ad1407cb.d33cb8",
+        "name": "Engine",
+        "x": 1406.01957321167,
+        "y": 631.0038890838623,
+        "wires": [
+            [
+                "60550a74.e904a4"
+            ]
+        ]
+    },
+    {
+        "id": "fdc26525.246bf8",
+        "type": "subflow:4b9c1aed.d33af4",
+        "z": "ad1407cb.d33cb8",
+        "name": "Engine",
+        "x": 1316.0195274353027,
+        "y": 711.0039501190186,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f918a93.b7dcd4",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Working queue",
+        "func": "var store = global.get(\"store\");\n\nif (store.EngineStatus != \"WORKING\") return;\n\nvar actions = store.Actions;\nvar works = store.Works;\n\nvar devices = store.Works.tasks;\nvar readings = store.Works.readings;\n\nmsg.payload = null;\n\nvar alls = [];\n    \ndevices.map(d => {\n\n    var device = readings[\"ID_\" + d];\n    \n    if (Object.keys(device).length == 5) {\n        \n        var elements = Object.keys(device);\n        \n        elements.map(key => {\n            var isReady = device[key][\"readings\"] && device[key][\"item\"] ? true : false;\n            alls.push(isReady);\n        });\n        \n    }\n\n   \n});\n\n  actions.push(\n        {\n            action: \"WAITING_API\", \n            desc: \"Waiting to get all readings from API!\", \n            time: new Date()\n        }\n    );\n    \n\nif (alls.length == (devices.length * 5) && alls.indexOf(false) == -1) {\n\n    actions.push(\n        {\n            action: \"BRAINING\", \n            desc: \"Ready to brain for plumping conditions! \", \n            time: new Date()\n        }\n    );\n    \n    store.EngineStatus = \"BRAINIZE\";\n    store.Actions = actions;\n    global.set(\"store\", store);\n    \n    msg.payload = results; \n    msg.topic = \"READY TO COMPUTE\";\n    \n    return [msg, msg];\n} else {\n    console.log(\"Wating\", alls.indexOf(false), alls.indexOf(true));\n}\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 370.14063262939453,
+        "y": 648.2304592132568,
+        "wires": [
+            [
+                "a2719b40.c7d088"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a2719b40.c7d088",
+        "type": "debug",
+        "z": "ad1407cb.d33cb8",
+        "name": "Waiting for readings",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 640.0195465087891,
+        "y": 720.0039196014404,
+        "wires": []
+    },
+    {
+        "id": "b1e608c2.42d388",
+        "type": "debug",
+        "z": "ad1407cb.d33cb8",
+        "name": "Brainzing",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 614.0195236206055,
+        "y": 795.0040435791016,
+        "wires": []
+    },
+    {
+        "id": "1445025a.c86cbe",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "BRAINIZE",
+        "func": "var store = global.get(\"store\");\n\nif (store.EngineStatus != \"BRAINIZE\") return;\n\nreturn msg;\n",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 302.01953125,
+        "y": 763.0039081573486,
+        "wires": [
+            [
+                "b1e608c2.42d388",
+                "6c405cc4.6c0de4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6c405cc4.6c0de4",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "Circadian",
+        "func": "var circadian = new Date().getHours();\n\nmsg.payload.circadian = circadian < 12 ? \"night\" : \"day\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 538.0195446014404,
+        "y": 880.0040130615234,
+        "wires": [
+            [
+                "928b31ae.93914"
+            ]
+        ]
+    },
+    {
+        "id": "928b31ae.93914",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "DAY Determine if conditions match",
+        "func": "var store = global.get(\"store\");\n\nvar truthField = store.Types.truthField;\nvar sensors = truthField.sensors;\nvar works = store.Works;\nvar readings = works.readings;\nworks.results = {};\n\nvar conditions = {\n    should: true,\n    circadian: null,\n    until: null\n};\n\n    \nvar formula = store.Types.formula[msg.payload.circadian];\n\nvar alls = [];\n\nsensors.map(s => {\n    \n    var device_id = \"ID_\" + s.device_id;\n    \n    var device_readings = readings[device_id];\n    \n    device_id = \"ID-\" + s.device_id + \"-\";\n\n    var tG = device_readings[device_id + s.sensors.tempGround].item.value;\n    var tA = device_readings[device_id + s.sensors.tempAmbient].item.value;\n    var h = device_readings[device_id + s.sensors.humidity].item.value;\n    var m = device_readings[device_id + s.sensors.moistureGround].item.value;\n\n    resultA = tG > formula.temperatureMin && tG < formula.temperatureMax;\n    resultB = tA > formula.temperatureMin && tA < formula.temperatureMax;\n    resultC = h > formula.humidityMin && h < formula.humidityMax;\n    resultD = m > formula.moistureMin && m < formula.moistureMax;\n    \n    var results = {\n        TempGround: resultA,\n        tempAmbient: resultB,\n        humidity: resultC,\n        moisture: resultD\n    }\n\n    works.results[device_id] = results;\n    \n    conditions.should = conditions.should &&\n        resultA && resultB && resultC  && resultD;\n\n});\n\nif (conditions.should) {\n    conditions.circadian = msg.payload.circadian;\n    var t = new Date();\n    conditions.until = t.setSeconds(t.getSeconds() + formula.pumpingSeconds); \n}\n\nworks.ShouldPump = conditions;\n\nstore.EngineStatus = \"COMPUTED\";\nstore.Works = works;\n\nglobal.set(\"store\", store);\n\n\nreturn msg;",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 880.01953125,
+        "y": 887.004074215889,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4b66f9d.2a0a208",
+        "type": "function",
+        "z": "ad1407cb.d33cb8",
+        "name": "COMPUTED",
+        "func": "var store = global.get(\"store\");\n\nif (store.EngineStatus != \"COMPUTED\") return;\n\nif (store.Works.ShouldPump) {\n    store.Actions.push({action: \"PUMP_START\", desc: \"Send pump order!\", time: new Date()});\n    store.EngineStatus = \"PUMPING\";\n} else {\n    store.Actions.push({action: \"PUMP_ABORT\", desc: \"Conditions are not met, abort pumping!\", time: new Date()});\n    store.EngineStatus = \"ON\";\n    console.log(store.Works.results);\n}\nglobal.set(\"store\", store);",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 209.01953125,
+        "y": 1032.2539234161377,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bd155ebc.75af",
+        "type": "inject",
+        "z": "da04bcce.844ec",
+        "name": "Refresh",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "json",
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "x": 168.01952743530273,
+        "y": 203.00000667572021,
+        "wires": [
+            [
+                "a07a7598.44e3f8"
+            ]
+        ]
+    },
+    {
+        "id": "a07a7598.44e3f8",
+        "type": "function",
+        "z": "da04bcce.844ec",
+        "name": "Track Events",
+        "func": "var colorArray = ['#FF6633','#4D4D4D','#5DA5DA','#FAA43A','#60BD68','#F17CB0','#B2912F','#B276B2','#DECF3F','#F15854'];\n\nvar chart = {\n    labels: [],\n    legends: [],\n    datasets: [],\n}\n\nvar store = global.get(\"store\");\n\nvar colorsIndex = -1;\n\nconsole.log(\"Refreshing chart\");\n\nstore.Actions.map(a => {\n\n    if (a.action === undefined ) console.log(a);\n    \n    if(chart.labels.indexOf(a.action) == -1){\n        \n        // console.log(\"New action\", a.action);\n        chart.labels.push(a.action);\n        chart.legends.push(a);\n\n        chart.datasets.push({\n            label: a.action,\n            current: false,\n            timestamp: a.time,\n            colorIndex: colorsIndex++,\n            data: []\n        });\n    } else {\n        // console.log(\"existing action\", a.action);\n    }\n    \n    var dataset = chart.datasets.filter(d => d.label == a.action)[0];\n    \n    //console.log(\"Writing dataset\", dataset);\n    \n    var time1 = new Date(a.time);\n    var time2 = new Date(a.time);\n    time2.setSeconds(time2.getSeconds() + 1);\n    dataset.data.push([time1, time2, colorArray[dataset.colorIndex]]);\n});\nmsg.cache = chart;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 371.01953125,
+        "y": 206.00000667572021,
+        "wires": [
+            [
+                "3a666633.5ba98a",
+                "b2ef86a6.a15a58"
+            ]
+        ]
+    },
+    {
+        "id": "835705eb.de9e78",
+        "type": "ui_template",
+        "z": "da04bcce.844ec",
+        "group": "b39db9cd.0e27a8",
+        "name": "ChartJS Timeline Library",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\nconst helpers = Chart.helpers;\nconst isArray = helpers.isArray;\n\nvar time = {\n\t\tunits: [{\n\t\t\tname: 'millisecond',\n\t\t\tsteps: [1, 2, 5, 10, 20, 50, 100, 250, 500]\n\t\t}, {\n\t\t\tname: 'second',\n\t\t\tsteps: [1, 2, 5, 10, 30]\n\t\t}, {\n\t\t\tname: 'minute',\n\t\t\tsteps: [1, 2, 5, 10, 30]\n\t\t}, {\n\t\t\tname: 'hour',\n\t\t\tsteps: [1, 2, 3, 6, 12]\n\t\t}, {\n\t\t\tname: 'day',\n\t\t\tsteps: [1, 2, 3, 5]\n\t\t}, {\n\t\t\tname: 'week',\n\t\t\tmaxStep: 4\n\t\t}, {\n\t\t\tname: 'month',\n\t\t\tmaxStep: 3\n\t\t}, {\n\t\t\tname: 'quarter',\n\t\t\tmaxStep: 4\n\t\t}, {\n\t\t\tname: 'year',\n\t\t\tmaxStep: false\n\t\t}]\n};\n\nvar myConfig = {\n    myTime : {\n        redoLabels: false\n    },\n    position: 'bottom',\n\n    time: {\n        parser: false, // false == a pattern string from http://momentjs.com/docs/#/parsing/string-format/ or a custom callback that converts its argument to a moment\n        format: false, // DEPRECATED false == date objects, moment object, callback or a pattern string from http://momentjs.com/docs/#/parsing/string-format/\n        unit: false, // false == automatic or override with week, month, year, etc.\n        round: false, // none, or override with week, month, year, etc.\n        displayFormat: false, // DEPRECATED\n        isoWeekday: false, // override week start day - see http://momentjs.com/docs/#/get-set/iso-weekday/\n        minUnit: 'millisecond',\n\n        // defaults to unit's corresponding unitFormat below or override using pattern string from http://momentjs.com/docs/#/displaying/format/\n        displayFormats: {\n            millisecond: 'h:mm:ss.SSS a', // 11:20:01.123 AM,\n            second: 'h:mm:ss a', // 11:20:01 AM\n            minute: 'h:mm:ss a', // 11:20:01 AM\n            quarter: '[Q]Q - YYYY', // Q3\n            year: 'YYYY', // 2015        \n            hour: 'MMM D, hA', // Sept 4, 5PM\n            day: 'll', // Sep 4 2015\n            week: 'll', // Week 46, or maybe \"[W]WW - YYYY\" ?\n            month: 'MMM YYYY', // Sept 2015\n            }\n    },\n    ticks: {\n        autoSkip: false\n    }\n};\n\n\nvar myTimeScale = Chart.scaleService.getScaleConstructor('time').extend({\n\n    determineDataLimits: function() {\n        var me = this;\n        me.labelMoments = [];\n\n        // We parse all date labels here, for each entry we parse its initial and end date\n        var scaleLabelMoments = [];\n        if (me.chart.data.datasets && me.chart.data.datasets.length > 0) {\n            helpers.each(me.chart.data.datasets, function(datasets) {\n                var data = datasets.data;\n                var length = data.length;\n                for (var i = 0; i < length; i++) {\n                    // We consider 0 to have initial date\n                    var initialLabelMoment = me.parseTime(data[i][0]);\n                    // we consider 1 to have end date\n                    // TODO maybe add a check to see which one is bigger, but right now i don't know the\n                    // TODO implications off that check\n                    var finalLabelMoment = me.parseTime(data[i][1]);\n                    if (initialLabelMoment.isValid()) {\n                        if (me.options.time.round) {\n                            initialLabelMoment.startOf(me.options.time.round);\n                        }\n                        scaleLabelMoments.push(initialLabelMoment);\n                    }\n                    if (finalLabelMoment.isValid()) {\n                        if (me.options.time.round) {\n                            finalLabelMoment.startOf(me.options.time.round);\n                        }\n                        scaleLabelMoments.push(finalLabelMoment);\n                    }\n                }\n            }, me);\n\n            me.firstTick = moment.min.call(me, scaleLabelMoments);\n            me.lastTick = moment.max.call(me, scaleLabelMoments);\n        } else {\n            me.firstTick = null;\n            me.lastTick = null;\n        }\n\n        // In this case label moments are the same as scale moments because this chart only supports\n        // dates as data and not labels like normal time scale. We are doing this to keep\n        // coordination between parent(TimeScale) calls\n        me.labelMoments.push(scaleLabelMoments);\n\n        // Set these after we've done all the data\n        if (me.options.time.min) {\n            me.firstTick = me.parseTime(me.options.time.min);\n        }\n\n        if (me.options.time.max) {\n            me.lastTick = me.parseTime(me.options.time.max);\n        }\n\n        // We will modify these, so clone for later\n        me.firstTick = (me.firstTick || moment()).clone();\n        me.lastTick = (me.lastTick || moment()).clone();\n    },\n    buildLabelDiffs: function() {\n        var me = this;\n        me.labelDiffs = [];\n        var scaleLabelDiffs = [];\n        // Parse common labels once\n        if (me.chart.data.datasets && me.chart.data.datasets.length > 0) {\n            helpers.each(me.chart.data.datasets, function(datasets, datasetIndex) {\n                var data = datasets.data;\n                var length = data.length;\n                for (var i = 0; i < length; i++) {\n                    // We consider 0 to have initial date\n                    var initialLabelMoment = me.parseTime(data[i][0]);\n                    // we consider 1 to have end date\n                    // TODO maybe add a check to see which one is bigger, but right now i don't know the\n                    // TODO implications off that check\n                    var finalLabelMoment = me.parseTime(data[i][1]);\n                    var diff;\n                    if (initialLabelMoment.isValid()) {\n                        if (me.options.time.round) {\n                            diff = initialLabelMoment.diff(me.firstTick, me.tickUnit, false);\n                        }\n                        else {\n                            if (me.isInTicks(initialLabelMoment, me.tickUnit))\n                            // No floor needed since we are one of the ticks\n                                diff = initialLabelMoment.diff(me.firstTick, me.tickUnit, false);\n                            else\n                                diff = initialLabelMoment.diff(me.firstTick, me.tickUnit, true);\n                        }\n                        scaleLabelDiffs.push(diff);\n                    }\n                    if (finalLabelMoment.isValid()) {\n                        if (me.options.time.round) {\n                            // Moment doesn't round on diff anymore\n                            diff = finalLabelMoment.diff(me.firstTick, me.tickUnit, false);\n                        }\n                        else\n                        {\n                            if (me.isInTicks(finalLabelMoment, me.tickUnit))\n                            // No floor needed since we are one of the ticks\n                                diff = finalLabelMoment.diff(me.firstTick, me.tickUnit, false);\n                            else\n                                diff = finalLabelMoment.diff(me.firstTick, me.tickUnit, true);\n                        }\n                        scaleLabelDiffs.push(diff);\n                    }\n                }\n                me.labelDiffs[datasetIndex] = scaleLabelDiffs;\n                scaleLabelDiffs = [];\n            }, me);\n        }\n\n\n    },\n\n    // This function is different from parent because the second argument of the index inside the array of dates\n    // e.g [initialDate, endDate]. Since we built the diffs in date order, which means that every 2 entries in\n    // me.labelDiffs represent one set of date with initial and end dates by order.\n    getLabelDiff: function (datasetIndex, dateIndex) {\n        var me = this;\n        if (datasetIndex === null || dateIndex === null)\n            return null;\n\n        if (me.labelDiffs === undefined)\n            me.buildLabelDiffs();\n\n        if (me.labelDiffs[datasetIndex] != undefined)\n            return me.labelDiffs[datasetIndex][dateIndex];\n\n        return null;\n    },\n\n    getPixelForValue: function(value, index, datasetIndex) {\n        var me = this;\n        var offset = null;\n        if (index !== undefined && datasetIndex !== undefined) {\n            offset = me.getLabelDiff(datasetIndex, index);\n        }\n\n        if (offset === null) {\n            if (!value || !value.isValid) {\n                // not already a moment object\n                value = me.parseTime(me.getRightValue(value));\n            }\n            if (value && value.isValid && value.isValid()) {\n                offset = value.diff(me.firstTick, me.tickUnit, false);\n            }\n        }\n\n        if (offset !== null) {\n            var decimal = offset !== 0 ? offset / me.scaleSizeInUnits : offset;\n\n            if (me.isHorizontal()) {\n                var valueOffset = (me.width * decimal);\n                return me.left + Math.round(valueOffset);\n            }\n\n            var heightOffset = (me.height * decimal);\n            return me.top + Math.round(heightOffset);\n        }\n    },\n\n    // Checks if some date object is a tickMoment\n    isInTicks: function (date, unit) {\n        var result = false;\n        var length = this.tickMoments.length;\n        var ticks = this.tickMoments;\n        for(var i = 0; i < length; i++)\n        {\n            var tick = ticks[i];\n            if (date.isSame(tick, unit))\n            {\n                result = true;\n                break;\n            }\n        }\n        return result;\n    }\n});\n\n\nChart.scaleService.registerScaleType('myTime', myTimeScale, myConfig);\n\n\n\nChart.controllers.timeLine = Chart.controllers.bar.extend({\n\n    getBarBounds : function (bar) {\n        var vm =   bar._view;\n        var x1, x2, y1, y2;\n\n        x1 = vm.x;\n        x2 = vm.x + vm.width;\n        y1 = vm.y;\n        y2 = vm.y + vm.height;\n\n        return {\n            left : x1,\n            top: y1,\n            right: x2,\n            bottom: y2\n        };\n\n    },\n\n    update: function(reset) {\n        var me = this;\n        var meta = me.getMeta();\n        helpers.each(meta.data, function(rectangle, index) {\n            me.updateElement(rectangle, index, reset);\n        }, me);\n    },\n\n    updateElement: function(rectangle, index, reset) {\n        var me = this;\n        var meta = me.getMeta();\n        var xScale = me.getScaleForId(meta.xAxisID);\n        var yScale = me.getScaleForId(meta.yAxisID);\n        var dataset = me.getDataset();\n        var data = dataset.data[index];\n        var custom = rectangle.custom || {};\n        var datasetIndex = me.index;\n        var rectangleElementOptions = me.chart.options.elements.rectangle;\n\n        rectangle._xScale = xScale;\n        rectangle._yScale = yScale;\n        rectangle._datasetIndex = me.index;\n        rectangle._index = index;\n\n        var ruler = me.getRuler(index);\n\n        if (index !== 0)\n            index = index * 2;\n\n        var x = xScale.getPixelForValue(data, index , datasetIndex);\n        index++;\n        var end = xScale.getPixelForValue(data, index, datasetIndex);\n\n        var y = yScale.getPixelForValue(data, datasetIndex, datasetIndex);\n        var width = end - x;\n        var height = me.calculateBarHeight(ruler);\n        var color = me.chart.options.colorFunction(data);\n\n        // This one has in account the size of the tick and the height of the bar, so we just\n        // divide both of them by two and subtract the height part and add the tick part\n        // to the real position of the element y. The purpose here is to place the bar\n        // in the middle of the tick.\n        var boxY = y + (ruler.tickHeight / 2) - (height / 2);\n\n        // console.log(me.chart.data.labels[index] + ' box x ' + index + ' : ' + x);\n        // console.log(me.chart.data.labels[index] + ' box y ' + index + ' : ' + boxY);\n        rectangle._model = {\n            x: reset ?  x - width : x,   // Top left of rectangle\n            y: boxY , // Top left of rectangle\n            width: width,\n            height: height,\n            base: x + width,\n            backgroundColor: color,\n            borderSkipped: custom.borderSkipped ? custom.borderSkipped : rectangleElementOptions.borderSkipped,\n            borderColor: custom.borderColor ? custom.borderColor : helpers.getValueAtIndexOrDefault(dataset.borderColor, index, rectangleElementOptions.borderColor),\n            borderWidth: custom.borderWidth ? custom.borderWidth : helpers.getValueAtIndexOrDefault(dataset.borderWidth, index, rectangleElementOptions.borderWidth),\n            // Tooltip\n            label: me.chart.data.labels[index],\n            datasetLabel: dataset.label\n        };\n\n\n\n        rectangle.draw = function() {\n            var ctx = this._chart.ctx;\n            var vm = this._view;\n            ctx.fillStyle = vm.backgroundColor;\n            ctx.lineWidth = vm.borderWidth;\n            helpers.drawRoundedRectangle(ctx, vm.x, vm.y, vm.width, vm.height, 1);\n            ctx.fill();\n        };\n\n        rectangle.inXRange = function (mouseX) {\n            var bounds = me.getBarBounds(this);\n            return mouseX >= bounds.left && mouseX <= bounds.right;\n        };\n        rectangle.tooltipPosition = function () {\n            var vm = this.getCenterPoint();\n            return {\n                x: vm.x ,\n                y: vm.y\n            };\n        };\n\n        rectangle.getCenterPoint = function () {\n            var vm = this._view;\n            var x, y;\n            x = vm.x + (vm.width / 2);\n            y = vm.y + (vm.height / 2);\n\n            return {\n                x : x,\n                y : y\n            };\n        };\n\n        rectangle.inRange = function (mouseX, mouseY) {\n            var inRange = false;\n\n            if(this._view)\n            {\n                var bounds = me.getBarBounds(this);\n                inRange = mouseX >= bounds.left && mouseX <= bounds.right &&\n                    mouseY >= bounds.top && mouseY <= bounds.bottom;\n            }\n            return inRange;\n        };\n\n        rectangle.pivot();\n    },\n\n    // From controller.bar\n    getRuler: function(index) {\n        var me = this;\n        var meta = me.getMeta();\n        var yScale = me.getScaleForId(meta.yAxisID);\n        var datasetCount = me.getBarCount();\n\n        var tickHeight;\n        if (yScale.options.type === 'category') {\n            tickHeight = yScale.getPixelForTick(index + 1) - yScale.getPixelForTick(index);\n        } else {\n            // Average width\n            tickHeight = yScale.width / yScale.ticks.length;\n        }\n        var categoryHeight = tickHeight * yScale.options.categoryPercentage;\n        var categorySpacing = (tickHeight - (tickHeight * yScale.options.categoryPercentage)) / 2;\n        var fullBarHeight = categoryHeight / datasetCount;\n\n        if (yScale.ticks.length !== me.chart.data.labels.length) {\n            var perc = yScale.ticks.length / me.chart.data.labels.length;\n            fullBarHeight = fullBarHeight * perc;\n        }\n\n        var barHeight = fullBarHeight * yScale.options.barPercentage;\n        var barSpacing = fullBarHeight - (fullBarHeight * yScale.options.barPercentage);\n\n        return {\n            datasetCount: datasetCount,\n            tickHeight: tickHeight,\n            categoryHeight: categoryHeight,\n            categorySpacing: categorySpacing,\n            fullBarHeight: fullBarHeight,\n            barHeight: barHeight,\n            barSpacing: barSpacing\n        };\n    },\n\n    // From controller.bar\n    getBarCount: function() {\n        var me = this;\n        var barCount = 0;\n        helpers.each(me.chart.data.datasets, function(dataset, datasetIndex) {\n            var meta = me.chart.getDatasetMeta(datasetIndex);\n            if (meta.bar && me.chart.isDatasetVisible(datasetIndex)) {\n                ++barCount;\n            }\n        }, me);\n        return barCount;\n    },\n\n\n    // draw\n    draw: function (ease) {\n        var easingDecimal = ease || 1;\n        var i, len;\n        var metaData = this.getMeta().data;\n        for (i = 0, len = metaData.length; i < len; i++)\n        {\n            metaData[i].transition(easingDecimal).draw();\n        }\n    },\n\n    // From controller.bar\n    calculateBarHeight: function(ruler) {\n        var me = this;\n        var yScale = me.getScaleForId(me.getMeta().yAxisID);\n        if (yScale.options.barThickness) {\n            return yScale.options.barThickness;\n        }\n        return yScale.options.stacked ? ruler.categoryHeight : ruler.barHeight;\n    },\n\n    removeHoverStyle: function(e) {\n        // TODO\n    },\n\n    setHoverStyle: function(e) {\n        // TODO: Implement this\n    }\n\n});\n\n\nChart.defaults.timeLine = {\n\n    colorFunction: function() {\n        return 'black';\n    },\n\n    layout: {\n        padding: {\n            left: 5,\n            right: 5,\n            top: 0\n        }\n    },\n\n    legend: {\n        display: false\n    },\n\n    scales: {\n        xAxes: [{\n            type: 'myTime',\n            position: 'bottom',\n            gridLines: {\n                display: true,\n                offsetGridLines: true,\n                drawBorder: true,\n                drawTicks: true\n            },\n            ticks: {\n                maxRotation: 0\n            },\n            unit: 'day'\n        }],\n        yAxes: [{\n            type: 'category',\n            position: 'left',\n            barThickness : 20,\n            gridLines: {\n                display: true,\n                offsetGridLines: true,\n                drawBorder: true,\n                drawTicks: true\n            }\n        }]\n    },\n    tooltips: {\n        mode: 'single',\n        callbacks: {\n            title: function(tooltipItems, data) {\n                return data.labels[tooltipItems[0].datasetIndex];\n            },\n            label: function(tooltipItem, data) {\n                \n                return [\"Started: \" + moment(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index][0]).fromNow(),\n                    \"Duration: \" + moment(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index][1]).from(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index][0], true)\n                    ]\n            }\n        }\n    }\n};\n\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "global",
+        "x": 767.01953125,
+        "y": 183.00000095367432,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a666633.5ba98a",
+        "type": "ui_template",
+        "z": "da04bcce.844ec",
+        "group": "b39db9cd.0e27a8",
+        "name": "ChartJS Timeline",
+        "order": 0,
+        "width": "16",
+        "height": "12",
+        "format": "<script>\nvar ctx = document.getElementById(\"chartjs_timeline_1\").getContext(\"2d\");\n// console.log(scope);\n\n\nscope.chart = new Chart(ctx, {\n    type: 'timeLine',\n    options: {\n        animation: false,\n        responsive: true,\n        colorFunction: function(data){\n            // data is the dataset event point.\n            // The first and second entries are the start/stop date\n            //The third entry specifies the color to use\n            return (typeof data[2] === 'undefined' ? 'black' : data[2]);\n        }\n    },\n    data: {\n        labels: [],\n        datasets: []\n    }\n});\n\n    \n(function(scope){\n    scope.$watch('msg', function(msg) {\n        if(typeof(msg) !== \"object\") return;\n\n        if(typeof(msg.cache) === \"object\"){\n            scope.chart.config.data.labels = msg.cache.labels;\n            scope.chart.config.data.datasets = msg.cache.datasets;\n        }\n\n        //redraw\n        scope.chart.update();\n    });\n})(scope);\n\n</script>\n\n<div style=\"width: 100%;\">\n    <canvas id=\"chartjs_timeline_1\"></canvas>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 749.01953125,
+        "y": 219.0000057220459,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2ef86a6.a15a58",
+        "type": "ui_template",
+        "z": "da04bcce.844ec",
+        "group": "158b0b00.3bf605",
+        "name": "Legend",
+        "order": 1,
+        "width": "16",
+        "height": "13",
+        "format": "<table id=\"table\" border=\"0.1\">\n <tr>\n <th>Legend</th> \n </tr>\n <tbody>\n <tr ng-repeat=\"row in msg.cache.legends\">\n <td class=\"numeric\" >{{row.action}}</td>\n <td class=\"numeric\" >{{row.desc}}</td>\n </tr>\n </tbody>\n</table>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 490.0000114440918,
+        "y": 377.0039052963257,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8fd418e.b8505",
+        "type": "ui_button",
+        "z": "da04bcce.844ec",
+        "name": "",
+        "group": "b39db9cd.0e27a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "CONFIGURE",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"truthField\":{\"sensors\":[{\"device_id\":5616,\"sensors\":{\"tempGround\":51,\"tempAmbient\":55,\"moistureGround\":50,\"humidity\":56}},{\"device_id\":5619,\"sensors\":{\"tempGround\":51,\"tempAmbient\":55,\"moistureGround\":50,\"humidity\":56}}],\"actuators\":[{\"knx_id\":23,\"groupAddress\":\"01>01>02\",\"features\":[{\"featureStart\":\"ON\"},{\"featureStop\":\"OFF\"}]}]},\"formula\":{\"day\":{\"temperatureMin\":8,\"temperatureMax\":86,\"humidityMin\":0,\"humidityMax\":175,\"moistureMin\":340,\"moistureMax\":950,\"pumpingSeconds\":10},\"night\":{\"temperatureMin\":8,\"temperatureMax\":86,\"humidityMin\":0,\"humidityMax\":175,\"moistureMin\":340,\"moistureMax\":950,\"pumpingSeconds\":10}},\"cron\":[10]}",
+        "payloadType": "json",
+        "topic": "",
+        "x": 265.14453125,
+        "y": 648.4531841278076,
+        "wires": [
+            [
+                "c17e9fff.2eecb"
+            ]
+        ]
+    },
+    {
+        "id": "9dd2e026.c3825",
+        "type": "debug",
+        "z": "da04bcce.844ec",
+        "name": "Test",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 728.5195178985596,
+        "y": 648.0039730072021,
+        "wires": []
+    },
+    {
+        "id": "e30664f.ab3ab98",
+        "type": "debug",
+        "z": "da04bcce.844ec",
+        "name": "Test",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 770.1861324310303,
+        "y": 790.5038557052612,
+        "wires": []
+    },
+    {
+        "id": "c17e9fff.2eecb",
+        "type": "subflow:f0af9102.c3dd3",
+        "z": "da04bcce.844ec",
+        "name": "",
+        "x": 510.60294914245605,
+        "y": 647.5872640609741,
+        "wires": [
+            [
+                "9dd2e026.c3825"
+            ]
+        ]
+    },
+    {
+        "id": "a05282a2.951b3",
+        "type": "subflow:ea885d62.d5ed3",
+        "z": "da04bcce.844ec",
+        "name": "",
+        "x": 559.3529186248779,
+        "y": 790.0872182846069,
+        "wires": [
+            [
+                "e30664f.ab3ab98"
+            ]
+        ]
+    },
+    {
+        "id": "594e8671.6c0898",
+        "type": "ui_button",
+        "z": "da04bcce.844ec",
+        "name": "",
+        "group": "b39db9cd.0e27a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "START",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "",
+        "x": 241.01953125,
+        "y": 752.0038890838623,
+        "wires": [
+            [
+                "a05282a2.951b3"
+            ]
+        ]
+    },
+    {
+        "id": "4f51a76d.4c6c98",
+        "type": "ui_button",
+        "z": "da04bcce.844ec",
+        "name": "",
+        "group": "b39db9cd.0e27a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "STOP",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "topic": "",
+        "x": 231.0195541381836,
+        "y": 891.0039348602295,
+        "wires": [
+            [
+                "a05282a2.951b3"
+            ]
+        ]
+    }
+]
