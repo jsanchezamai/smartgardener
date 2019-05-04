@@ -1,9 +1,9 @@
-Smart Plumper
+Smart Pumper
 ----------------------
 
 Es un microservicio type-wired para Smart Gardener.
 
-*Microservicio* pretende significar que Smart Plumper es un blob  que dadas unas condiciones de inicio devuelve una funcionalidad . *Type-wired* pretende significar que existen unos tipos enlazados.
+*Microservicio* pretende significar que Smart Pumper es un blob  que dadas unas condiciones de inicio devuelve una funcionalidad . *Type-wired* pretende significar que existen unos tipos enlazados.
 
 **Tipos**:
 - Lista de dispositivos con sensores.
@@ -17,7 +17,7 @@ Es un microservicio type-wired para Smart Gardener.
 
 **Smart Gardener** es una formulación de Smart Citizen como CGV Wall Manager.
 
-Por tanto, en el contexto del campo de verdad de Wall Manager, Smart Plumpler incluye la manipulación de sensores (humedad y temperatura) y actuadores (bomba de riego). Mientras que la funcionalidad del servicio se describe como: **riego inteligente (por umbrales) a partir de las condiciones de humedad y temperatura**.
+Por tanto, en el contexto del campo de verdad de Wall Manager, Smart Pumpler incluye la manipulación de sensores (humedad y temperatura) y actuadores (bomba de riego). Mientras que la funcionalidad del servicio se describe como: **riego inteligente (por umbrales) a partir de las condiciones de humedad y temperatura**.
 
 En el siguiente gráfico se muestra el gantt de acciones del sistema.
 
@@ -39,9 +39,9 @@ Acciones:
 
 Instalación
 -----------------------
-El *microservicio type-wired para Smart Gardener* llamado Smart Plumper corre sobre **Node-Red**. Ya que Node-Red se sirve desde un servidor NodeJs es agnóstico respecto de la plataforma y como cualquier servicio tcp/ip puede operar dentro de la red local o desde la nube (es necesaria pasarela Hub/Box para instalaciones Cloud: una Smart Plumper Hub en el Cloud conjugado con un Smart Plumper Box en la red local).
+El *microservicio type-wired para Smart Gardener* llamado Smart Pumper corre sobre **Node-Red**. Ya que Node-Red se sirve desde un servidor NodeJs es agnóstico respecto de la plataforma y como cualquier servicio tcp/ip puede operar dentro de la red local o desde la nube (es necesaria pasarela Hub/Box para instalaciones Cloud: una Smart Pumper Hub en el Cloud conjugado con un Smart Pumper Box en la red local).
 
-Smart Plumper se presenta en forma de **Flow/Subflows en archivo .JSON** (referir documentación oficial NodeRed para importar).
+Smart Pumper se presenta en forma de **Flow/Subflows en archivo .JSON** (referir documentación oficial NodeRed para importar).
 
 Configuración
 -----------------------
@@ -51,7 +51,7 @@ Como en todas las soluciones tipo *type*, deben establecerse las condiciones de 
 Los despositivos se inflan desde la api.smarticizen/devices, los sensores se inflan desde al api.smartciziten/devices/sensors.
 
 - Lista de bombas de riego  
-Los dispositivos KnX se inflan directamente en Smart Plumper (importando configuración ETS). Opcional, instalar nodos-openhab para otros protocolos.
+Los dispositivos KnX se inflan directamente en Smart Pumper (importando configuración ETS). Opcional, instalar nodos-openhab para otros protocolos.
 
 - Fórmula de riego  
 Discriminando día o noche, se aplicará árbol de decisión sobre la temperatura (ambiente y en tierra) y la humedad en tierra.
@@ -62,13 +62,13 @@ Lanzador único de validación cada x horas. Opcional, instalar módulo openhab-
 Como en todas las soluciones de tipo *type-wiring*, deben establecerse las condiciones de relación entre los tipos:
 
 - Sensores SmartCitizen  
-Enlace Smart Plumper con api Smart Citizen en modo lectura.
+Enlace Smart Pumper con api Smart Citizen en modo lectura.
 - Bomba de riego  
-Enlace Smart Plumper con campo de verdad en modo escritura.
+Enlace Smart Pumper con campo de verdad en modo escritura.
 
 Uso
 --------------------
-Este apartado se ha dividido en tres secciones que corresponden a las fases del ciclo de vida de Smart Plumpler:
+Este apartado se ha dividido en tres secciones que corresponden a las fases del ciclo de vida de Smart Pumpler:
 
 - Introducción tipos
 - Activación relaciones
